@@ -18,8 +18,8 @@ description: Справочник неочевидных граблей плат
 **Группы «HorizontalIfPossible» складываются в один столбец.**
 В веб-клиенте 8.5 почти всегда разворачиваются вертикально: поля друг под другом, фото растягивается в пустую рамку, панели «лесенкой». Решение: `"alwaysHorizontal"` (`<Group>AlwaysHorizontal</Group>`) для всех групп, которые обязаны стоять в ряд.
 
-**Вертикальных закладок слева нет.**
-`PagesRepresentation` принимает только `None/TabsOnTop/TabsOnBottom`; значения `TabsOnLeft/TabsLeft/VerticalTabs` XDTO отклоняет («Different property and XDTO data item»). Решение: слева группа кнопок с `"type": "hyperlink"`, справа `pages` c `pagesRepresentation: "None"`, переключение `Элементы.Страницы.ТекущаяСтраница = Элементы.СтраницаХ;` в обработчиках команд, стартовая страница — в `ПриСозданииНаСервере`.
+**Вертикальные закладки слева — значение enum легко не найти.**
+`TabsOnLeft` / `TabsLeft` / `VerticalTabs` XDTO отклоняет («Different property and XDTO data item») — но левые закладки СУЩЕСТВУЮТ: правильное значение `<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>` (в конфигураторе — «Закладки слева»). Подбирать значение перебором можно только прогонами import — оно не гуглится.
 
 **Кнопки команды молча не работают.**
 `<Action>` команды должно совпадать с именем процедуры модуля ДО СИМВОЛА. Проверяй `grep -n '<Action>' Form.xml` против `Процедура ... (Команда)` в Module.bsl.

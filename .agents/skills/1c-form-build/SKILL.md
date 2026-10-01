@@ -45,7 +45,7 @@ src/cf/<Тип>/<Объект>/
 - Таблица динсписка получает SearchString/ViewStatus/SearchControl автоматически — не описывать руками.
 - Стандартные команды сортировки таблиц (`SortListAsc/Desc`) в 8.5 НЕ работают («Invalid name of form item command») — свои команды + `Список.Порядок.Элементы` (см. 1c-platform-quirks про пользовательские настройки).
 - `picture` у кнопок/команд в JSON НЕ задавать — XDTO-отказ «Property Picture».
-- `pagesRepresentation`: допустимы `None/TabsOnTop/TabsOnBottom`; левых закладок в 8.5 НЕТ (значения `TabsOnLeft/TabsLeft/VerticalTabs` платформа отклоняет) — проверяется только прогоном import.
+- `pagesRepresentation`: `None` / `TabsOnTop` / `TabsOnBottom` / `TabsOnLeftHorizontal` (закладки слева — как в карточках типовых; именно такое имя значения, НЕ `TabsOnLeft`). Значение можно проверить только прогоном import.
 
 ## Применить и проверить
 
