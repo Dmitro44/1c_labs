@@ -1,0 +1,346 @@
+[
+  {
+    "type": "Enum",
+    "name": "ВидДоплатыЗаСовмещение",
+    "synonym": "Вид доплаты за совмещение",
+    "values": [
+      {
+        "name": "ЗаВыполнениеОбязанностейОтсутствующегоРаботника",
+        "synonym": "За выполнение обязанностей отсутствующего работника"
+      },
+      {
+        "name": "ЗаРасширениеЗоныОбслуживания",
+        "synonym": "За расширение зоны обслуживания"
+      },
+      {
+        "name": "ЗаСовмещениеПрофессии",
+        "synonym": "За совмещение профессии"
+      },
+      {
+        "name": "ЗаСовмещениеДолжности",
+        "synonym": "За совмещение должности"
+      }
+    ]
+  },
+  {
+    "type": "Enum",
+    "name": "ВидФинансированияПФО",
+    "synonym": "Вид финансирования ПФО",
+    "values": [
+      {
+        "name": "Бюджет",
+        "synonym": "Бюджет"
+      },
+      {
+        "name": "Внебюджет",
+        "synonym": "Внебюджет"
+      },
+      {
+        "name": "ЧленскиеВзносы",
+        "synonym": "Членские взносы"
+      },
+      {
+        "name": "ДобровольныеВзносы",
+        "synonym": "Добровольные взносы"
+      }
+    ]
+  },
+  {
+    "type": "Catalog",
+    "name": "ПричинаОтсутствия",
+    "synonym": "Причина отсутствия",
+    "codeLength": 0,
+    "descriptionLength": 100,
+    "predefined": [
+      "Больничный",
+      "Отпуск",
+      "ДекретныйОтпуск",
+      "Командировка",
+      "Другое"
+    ]
+  },
+  {
+    "type": "InformationRegister",
+    "name": "ШтатныеЕдиницы",
+    "synonym": "Штатные единицы",
+    "writeMode": "RecorderSubordinate",
+    "dimensions": [
+      "Подразделение: CatalogRef.Подразделения | master, denyIncomplete",
+      "Должность: CatalogRef.Должности | denyIncomplete",
+      "ВидФинансирования: EnumRef.ИсточникФинансирования | denyIncomplete",
+      "Разряд: Number(2,0)"
+    ],
+    "resources": [
+      "Ставка: Number(5,2)",
+      "Оклад: Number(15,2)"
+    ]
+  },
+  {
+    "type": "InformationRegister",
+    "name": "РегистрРаботыСоШтатнымРасписанием",
+    "synonym": "Регистр работы со штатным расписанием",
+    "writeMode": "RecorderSubordinate",
+    "dimensions": [
+      "Подразделение: CatalogRef.Подразделения | master, denyIncomplete",
+      "Должность: CatalogRef.Должности | denyIncomplete",
+      "ВидФинансирования: EnumRef.ИсточникФинансирования | denyIncomplete",
+      "Разряд: Number(2,0)"
+    ],
+    "resources": [
+      "Ставка: Number(5,2)",
+      "Оклад: Number(15,2)"
+    ]
+  },
+  {
+    "type": "InformationRegister",
+    "name": "БольничныеПериоды",
+    "synonym": "Больничные периоды",
+    "writeMode": "RecorderSubordinate",
+    "periodicity": "Day",
+    "dimensions": [
+      "Сотрудник: CatalogRef.Сотрудники | master, denyIncomplete"
+    ],
+    "attributes": [
+      "НомерБольничного: String(50)",
+      "ДатаОкончания: Date"
+    ]
+  },
+  {
+    "type": "InformationRegister",
+    "name": "КомплектованияСотрудников",
+    "synonym": "Комплектования сотрудников",
+    "writeMode": "RecorderSubordinate",
+    "dimensions": [
+      "Сотрудник: CatalogRef.Сотрудники | master, denyIncomplete"
+    ],
+    "attributes": [
+      "ВидКомплектования: EnumRef.ВидКомплектования",
+      "НовыйВидКомплектования: EnumRef.ВидКомплектования",
+      "ДатаПриема: Date",
+      "ДатаУвольнения: Date",
+      "КоличествоЛет: Number(3,0)"
+    ]
+  },
+  {
+    "type": "InformationRegister",
+    "name": "ПериодОтпуска",
+    "synonym": "Период отпуска",
+    "writeMode": "RecorderSubordinate",
+    "dimensions": [
+      "Сотрудник: CatalogRef.Сотрудники | master, denyIncomplete"
+    ],
+    "attributes": [
+      "ДатаНачала: Date",
+      "ДатаОкончания: Date"
+    ]
+  },
+  {
+    "type": "InformationRegister",
+    "name": "РегистрУчетаСотрудников",
+    "synonym": "Регистр учета сотрудников",
+    "writeMode": "RecorderSubordinate",
+    "dimensions": [
+      "Сотрудник: CatalogRef.Сотрудники | master, denyIncomplete"
+    ],
+    "attributes": [
+      "Подразделение: CatalogRef.Подразделения",
+      "Должность: CatalogRef.Должности",
+      "ВидФинансирования: EnumRef.ИсточникФинансирования",
+      "ВидРаботы: EnumRef.ВидРаботы",
+      "Ставка: Number(5,2)",
+      "Оклад: Number(15,2)",
+      "Статус: EnumRef.СтатусСотрудника",
+      "ДатаПриема: Date",
+      "ДатаУвольнения: Date"
+    ]
+  },
+  {
+    "type": "InformationRegister",
+    "name": "РегистрУчетаОтсутствияСотрудников",
+    "synonym": "Регистр учета отсутствия сотрудников",
+    "writeMode": "RecorderSubordinate",
+    "dimensions": [
+      "Сотрудник: CatalogRef.Сотрудники | master, denyIncomplete"
+    ],
+    "attributes": [
+      "ПричинаОтсутствия: CatalogRef.ПричинаОтсутствия",
+      "ДатаНачала: Date",
+      "ДатаОкончания: Date"
+    ]
+  },
+  {
+    "type": "InformationRegister",
+    "name": "РегистрУчетаЗамещенияСотрудников",
+    "synonym": "Регистр учета замещения сотрудников",
+    "writeMode": "RecorderSubordinate",
+    "dimensions": [
+      "Сотрудник: CatalogRef.Сотрудники | master, denyIncomplete"
+    ],
+    "attributes": [
+      "ЗамещаемыйСотрудник: CatalogRef.Сотрудники",
+      "Подразделение: CatalogRef.Подразделения",
+      "Должность: CatalogRef.Должности",
+      "ВидФинансирования: EnumRef.ИсточникФинансирования",
+      "ДатаНачала: Date",
+      "ДатаОкончания: Date"
+    ]
+  },
+  {
+    "type": "InformationRegister",
+    "name": "РегистрУчетаСовмещений",
+    "synonym": "Регистр учета совмещений",
+    "writeMode": "RecorderSubordinate",
+    "dimensions": [
+      "Сотрудник: CatalogRef.Сотрудники | master, denyIncomplete"
+    ],
+    "attributes": [
+      "ВидДоплатыЗаСовмещение: EnumRef.ВидДоплатыЗаСовмещение",
+      "ВидРаботы: EnumRef.ВидРаботы",
+      "Ставка: Number(5,2)",
+      "ДатаНачала: Date",
+      "ДатаОкончания: Date"
+    ]
+  },
+  {
+    "type": "AccumulationRegister",
+    "name": "РегистрНакопленияНадбавок",
+    "synonym": "Регистр накопления надбавок",
+    "registerType": "Turnovers",
+    "dimensions": [
+      "Сотрудник: CatalogRef.Сотрудники",
+      "Надбавка: CatalogRef.Надбавки",
+      "ЕдИзм: EnumRef.ЕдИзм"
+    ],
+    "resources": [
+      "Размер: Number(15,2)"
+    ],
+    "attributes": [
+      "ДатаНачала: Date",
+      "ДатаОкончания: Date"
+    ]
+  },
+  {
+    "type": "Document",
+    "name": "ВводШтатнойЕдиницы",
+    "synonym": "Ввод штатной единицы",
+    "registerRecords": [
+      "InformationRegister.ШтатныеЕдиницы",
+      "InformationRegister.РегистрРаботыСоШтатнымРасписанием"
+    ],
+    "defaultObjectForm": "Document.ВводШтатнойЕдиницы.Form.ФормаДокумента",
+    "defaultListForm": "Document.ВводШтатнойЕдиницы.Form.ФормаСписка",
+    "attributes": [
+      "ИтогоОклад: Number(15,2)",
+      "ИтогоСтавок: Number(15,2)",
+      "Комментарий: String(200) | multiLine"
+    ],
+    "tabularSections": {
+      "ШтатныеЕдиницы": [
+        "Подразделение: CatalogRef.Подразделения | req",
+        "Должность: CatalogRef.Должности | req",
+        "ВидФинансирования: EnumRef.ИсточникФинансирования | req",
+        "Разряд: Number(2,0)",
+        "Ставка: Number(5,2)",
+        "Оклад: Number(15,2)"
+      ]
+    }
+  },
+  {
+    "type": "Document",
+    "name": "УдалениеШтатнойЕдиницы",
+    "synonym": "Удаление штатной единицы",
+    "registerRecords": [
+      "InformationRegister.РегистрРаботыСоШтатнымРасписанием"
+    ],
+    "defaultObjectForm": "Document.УдалениеШтатнойЕдиницы.Form.ФормаДокумента",
+    "attributes": [
+      "Подразделение: CatalogRef.Подразделения",
+      "Должность: CatalogRef.Должности",
+      "Финансирование: EnumRef.ИсточникФинансирования",
+      "ИтогоОклад: Number(15,2)",
+      "ИтогоСтавок: Number(15,2)",
+      "Комментарий: String(200) | multiLine"
+    ],
+    "tabularSections": {
+      "ШтатныеЕдиницы": [
+        "Подразделение: CatalogRef.Подразделения | req",
+        "Должность: CatalogRef.Должности | req",
+        "ВидФинансирования: EnumRef.ИсточникФинансирования | req",
+        "Разряд: Number(2,0)",
+        "Ставка: Number(5,2)",
+        "Оклад: Number(15,2)"
+      ]
+    }
+  },
+  {
+    "type": "Document",
+    "name": "Больничные",
+    "synonym": "Больничные",
+    "registerRecords": [
+      "InformationRegister.БольничныеПериоды"
+    ],
+    "defaultObjectForm": "Document.Больничные.Form.ФормаДокумента",
+    "attributes": [
+      "Комментарий: String(200) | multiLine"
+    ],
+    "tabularSections": {
+      "Сотрудники": [
+        "Сотрудник: CatalogRef.Сотрудники | req",
+        "С: Date | req",
+        "По: Date | req",
+        "НомерБольничного: String(50)"
+      ]
+    }
+  },
+  {
+    "type": "Document",
+    "name": "ПриемНаРаботу",
+    "synonym": "Прием на работу",
+    "registerRecords": [
+      "InformationRegister.КомплектованияСотрудников",
+      "InformationRegister.ПериодОтпуска",
+      "InformationRegister.РегистрУчетаСотрудников",
+      "InformationRegister.РегистрУчетаОтсутствияСотрудников",
+      "InformationRegister.РегистрУчетаЗамещенияСотрудников",
+      "InformationRegister.РегистрУчетаСовмещений",
+      "AccumulationRegister.РегистрНакопленияНадбавок"
+    ],
+    "defaultObjectForm": "Document.ПриемНаРаботу.Form.ФормаДокумента",
+    "defaultListForm": "Document.ПриемНаРаботу.Form.ФормаСписка",
+    "attributes": [
+      "Сотрудник: CatalogRef.Сотрудники | req",
+      "Подразделение: CatalogRef.Подразделения | req",
+      "Должность: CatalogRef.Должности | req",
+      "ВидФинансирования: EnumRef.ИсточникФинансирования | req",
+      "ВидРаботы: EnumRef.ВидРаботы",
+      "Ставка: Number(5,2)",
+      "Оклад: Number(15,2)",
+      "ВидКомплектования: EnumRef.ВидКомплектования",
+      "НовыйВидКомплектования: EnumRef.ВидКомплектования",
+      "ДатаПриема: Date",
+      "ДатаУвольнения: Date",
+      "КоличествоЛет: Number(3,0)",
+      "МетодПриема: String(50)",
+      "ЗаголовокПриказа: String(200)",
+      "ВидДоплатыЗаСовмещение: EnumRef.ВидДоплатыЗаСовмещение",
+      "ДатаОкончанияДоплатыЗаСовмещение: Date",
+      "ОтсутствующийСотрудник: CatalogRef.Сотрудники",
+      "ПодразделениеОтсутствующего: CatalogRef.Подразделения",
+      "ДолжностьОтсутствующего: CatalogRef.Должности",
+      "ВидФинансированияОтсутствующего: EnumRef.ИсточникФинансирования",
+      "ВидРаботыОтсутствующего: EnumRef.ВидРаботы",
+      "ПричинаОтсутствия: CatalogRef.ПричинаОтсутствия",
+      "НачалоИспытательногоСрока: Date",
+      "КонецИспытательногоСрока: Date"
+    ],
+    "tabularSections": {
+      "Надбавки": [
+        "Надбавка: CatalogRef.Надбавки | req",
+        "Размер: Number(15,2)",
+        "ЕдИзм: EnumRef.ЕдИзм",
+        "Начало: Date",
+        "Конец: Date"
+      ]
+    }
+  }
+]

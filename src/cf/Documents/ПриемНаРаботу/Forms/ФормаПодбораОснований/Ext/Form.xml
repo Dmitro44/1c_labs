@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Основания приема</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Основания" id="1">
+			<DataPath>Основания</DataPath>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<HeightInTableRows>12</HeightInTableRows>
+			<ContextMenu name="ОснованияКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ОснованияКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="Выбрать" id="4">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Выбрать</CommandName>
+						<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="5"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ОснованияРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="ОснованияСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Основания</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОснованияСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="ОснованияСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОснованияСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Основания</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОснованияСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="ОснованияСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОснованияУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Основания</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОснованияУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ОснованияУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="Причина" id="16">
+					<DataPath>Основания.Причина</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Причина отсутствия</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПричинаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПричинаРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Основания" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Причина" id="20">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПричинаОтсутствия</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Выбрать</Action>
+		</Command>
+	</Commands>
+</Form>

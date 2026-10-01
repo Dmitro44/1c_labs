@@ -1,0 +1,161 @@
+{
+  "title": "Подбор штатных единиц",
+  "elements": [
+    {
+      "autoCmdBar": "ФормаКоманднаяПанель",
+      "children": [
+        {
+          "button": "Выбрать",
+          "command": "Выбрать",
+          "defaultButton": true
+        }
+      ]
+    },
+    {
+      "group": "horizontalIfPossible",
+      "name": "ГруппаОтбора",
+      "children": [
+        {
+          "input": "ОтборПодразделение",
+          "path": "ОтборПодразделение",
+          "title": "Подразделение",
+          "clearButton": true,
+          "events": {
+            "OnChange": "ОбновитьСписокПриИзменении"
+          }
+        },
+        {
+          "input": "ОтборДолжность",
+          "path": "ОтборДолжность",
+          "title": "Должность",
+          "clearButton": true,
+          "events": {
+            "OnChange": "ОбновитьСписокПриИзменении"
+          }
+        },
+        {
+          "input": "ОтборФинансирование",
+          "path": "ОтборФинансирование",
+          "title": "Финансирование",
+          "clearButton": true,
+          "events": {
+            "OnChange": "ОбновитьСписокПриИзменении"
+          }
+        }
+      ]
+    },
+    {
+      "table": "ШтатныеЕдиницы",
+      "path": "ШтатныеЕдиницы",
+      "heightInTableRows": 14,
+      "changeRowSet": false,
+      "changeRowOrder": false,
+      "commandBar": {
+        "children": [
+          {
+            "button": "Обновить",
+            "command": "ОбновитьСписок"
+          }
+        ]
+      },
+      "columns": [
+        {
+          "check": "Пометка",
+          "path": "ШтатныеЕдиницы.Пометка",
+          "titleLocation": "none"
+        },
+        {
+          "input": "Финансирование",
+          "path": "ШтатныеЕдиницы.Финансирование"
+        },
+        {
+          "input": "Подразделение",
+          "path": "ШтатныеЕдиницы.Подразделение"
+        },
+        {
+          "input": "Должность",
+          "path": "ШтатныеЕдиницы.Должность"
+        },
+        {
+          "input": "Разряд",
+          "path": "ШтатныеЕдиницы.Разряд",
+          "width": 7,
+          "autoMaxWidth": false
+        },
+        {
+          "input": "Ставка",
+          "path": "ШтатныеЕдиницы.Ставка",
+          "format": "ЧДЦ=2"
+        },
+        {
+          "input": "Оклад",
+          "path": "ШтатныеЕдиницы.Оклад",
+          "format": "ЧДЦ=2"
+        }
+      ]
+    }
+  ],
+  "autoCmdBar": "ФормаКоманднаяПанель",
+  "events": {
+    "OnCreateAtServer": "ПриСозданииНаСервере"
+  },
+  "attributes": [
+    {
+      "name": "ШтатныеЕдиницы",
+      "type": "ValueTable",
+      "columns": [
+        {
+          "name": "Пометка",
+          "type": "boolean"
+        },
+        {
+          "name": "Финансирование",
+          "type": "EnumRef.ИсточникФинансирования"
+        },
+        {
+          "name": "Подразделение",
+          "type": "CatalogRef.Подразделения"
+        },
+        {
+          "name": "Должность",
+          "type": "CatalogRef.Должности"
+        },
+        {
+          "name": "Разряд",
+          "type": "decimal(2,0)"
+        },
+        {
+          "name": "Ставка",
+          "type": "decimal(5,2)"
+        },
+        {
+          "name": "Оклад",
+          "type": "decimal(15,2)"
+        }
+      ]
+    },
+    {
+      "name": "ОтборПодразделение",
+      "type": "CatalogRef.Подразделения"
+    },
+    {
+      "name": "ОтборДолжность",
+      "type": "CatalogRef.Должности"
+    },
+    {
+      "name": "ОтборФинансирование",
+      "type": "EnumRef.ИсточникФинансирования"
+    }
+  ],
+  "commands": [
+    {
+      "name": "Выбрать",
+      "action": "Выбрать"
+    },
+    {
+      "name": "ОбновитьСписок",
+      "title": "Обновить",
+      "action": "ОбновитьСписок"
+    }
+  ]
+}

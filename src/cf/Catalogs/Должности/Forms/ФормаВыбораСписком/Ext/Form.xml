@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выбор должностей списком</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Выбрать" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Выбрать</CommandName>
+				<DefaultButton>true</DefaultButton>
+				<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="Отмена" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Button name="ВыбратьВсех" id="5">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыбратьВсех</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выбрать всех</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ВыбратьВсехРасширеннаяПодсказка" id="6"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="Список" id="7">
+			<DataPath>Список</DataPath>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ChoiceMode>true</ChoiceMode>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<Height>12</Height>
+			<ContextMenu name="СписокКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="9">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ПолноеНаименование" id="20">
+					<DataPath>Список.ПолноеНаименование</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное наименование...</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="КодДолжности" id="23">
+					<DataPath>Список.КодДолжности</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код должности</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КодДолжностиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="КодДолжностиРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="Код" id="26">
+					<DataPath>Список.Code</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КодКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<CommandBar name="ПанельДобавления" id="29">
+			<ExtendedTooltip name="ПанельДобавленияРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<Button name="Добавить" id="31">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Добавить</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="32"/>
+				</Button>
+				<Button name="КнопкаВыбратьДолжность" id="33">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ВыбратьДолжность</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаВыбратьДолжностьРасширеннаяПодсказка" id="34"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<Table name="ВыбранныеДолжности" id="35">
+			<DataPath>ВыбранныеДолжности</DataPath>
+			<ChangeRowSet>true</ChangeRowSet>
+			<ChangeRowOrder>true</ChangeRowOrder>
+			<Height>6</Height>
+			<ContextMenu name="ВыбранныеДолжностиКонтекстноеМеню" id="36"/>
+			<AutoCommandBar name="ВыбранныеДолжностиКоманднаяПанель" id="37"/>
+			<ExtendedTooltip name="ВыбранныеДолжностиРасширеннаяПодсказка" id="38"/>
+			<SearchStringAddition name="ВыбранныеДолжностиСтрокаПоиска" id="39">
+				<AdditionSource>
+					<Item>ВыбранныеДолжности</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыбранныеДолжностиСтрокаПоискаКонтекстноеМеню" id="40"/>
+				<ExtendedTooltip name="ВыбранныеДолжностиСтрокаПоискаРасширеннаяПодсказка" id="41"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВыбранныеДолжностиСостояниеПросмотра" id="42">
+				<AdditionSource>
+					<Item>ВыбранныеДолжности</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыбранныеДолжностиСостояниеПросмотраКонтекстноеМеню" id="43"/>
+				<ExtendedTooltip name="ВыбранныеДолжностиСостояниеПросмотраРасширеннаяПодсказка" id="44"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВыбранныеДолжностиУправлениеПоиском" id="45">
+				<AdditionSource>
+					<Item>ВыбранныеДолжности</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыбранныеДолжностиУправлениеПоискомКонтекстноеМеню" id="46"/>
+				<ExtendedTooltip name="ВыбранныеДолжностиУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="Должность" id="48">
+					<DataPath>ВыбранныеДолжности.Должность</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="50"/>
+				</InputField>
+				<InputField name="ВыбранныйКодДолжности" id="51">
+					<DataPath>ВыбранныеДолжности.КодДолжности</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код должности</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВыбранныйКодДолжностиКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ВыбранныйКодДолжностиРасширеннаяПодсказка" id="53"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="54">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<MainTable>Catalog.Должности</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВыбранныеДолжности" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранные должности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Должность" id="56">
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должности</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КодДолжности" id="57">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыбратьОбработка</Action>
+			<Shortcut>Ctrl+Enter</Shortcut>
+		</Command>
+		<Command name="Добавить" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ДобавитьОбработка</Action>
+		</Command>
+		<Command name="ВыбратьДолжность" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать должность</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыбратьДолжностьОбработка</Action>
+		</Command>
+		<Command name="ВыбратьВсех" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать всех</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыбратьВсехОбработка</Action>
+		</Command>
+	</Commands>
+</Form>

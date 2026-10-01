@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Удаление штатной единицы</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<Group>HorizontalIfPossible</Group>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="ПодразделениеФильтр" id="3">
+					<DataPath>Объект.Подразделение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ПодразделениеФильтрКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ПодразделениеФильтрРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="OnChange">ПересчитатьИтогиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДолжностьФильтр" id="6">
+					<DataPath>Объект.Должность</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</Title>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ДолжностьФильтрКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ДолжностьФильтрРасширеннаяПодсказка" id="8"/>
+					<Events>
+						<Event name="OnChange">ПересчитатьИтогиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ФинансированиеФильтр" id="9">
+					<DataPath>Объект.Финансирование</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Финансирование</v8:content>
+						</v8:item>
+					</Title>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ФинансированиеФильтрКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ФинансированиеФильтрРасширеннаяПодсказка" id="11"/>
+					<Events>
+						<Event name="OnChange">ПересчитатьИтогиПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНомерДата" id="12">
+			<Group>HorizontalIfPossible</Group>
+			<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<InputField name="Номер" id="14">
+					<DataPath>Объект.Number</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>10</Width>
+					<ContextMenu name="НомерКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="Дата" id="17">
+					<DataPath>Объект.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="19"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ШтатныеЕдиницы" id="20">
+			<DataPath>Объект.ШтатныеЕдиницы</DataPath>
+			<ChangeRowSet>true</ChangeRowSet>
+			<HeightInTableRows>12</HeightInTableRows>
+			<ContextMenu name="ШтатныеЕдиницыКонтекстноеМеню" id="21"/>
+			<AutoCommandBar name="ШтатныеЕдиницыКоманднаяПанель" id="22">
+				<ChildItems>
+					<Button name="Подобрать" id="23">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПодобратьШтатныеЕдиницы</CommandName>
+						<ExtendedTooltip name="ПодобратьРасширеннаяПодсказка" id="24"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ШтатныеЕдиницыРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="ШтатныеЕдиницыСтрокаПоиска" id="26">
+				<AdditionSource>
+					<Item>ШтатныеЕдиницы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ШтатныеЕдиницыСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ШтатныеЕдиницыСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ШтатныеЕдиницыСостояниеПросмотра" id="29">
+				<AdditionSource>
+					<Item>ШтатныеЕдиницы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ШтатныеЕдиницыСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ШтатныеЕдиницыСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ШтатныеЕдиницыУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>ШтатныеЕдиницы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ШтатныеЕдиницыУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ШтатныеЕдиницыУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ВидФинансирования" id="35">
+					<DataPath>Объект.ШтатныеЕдиницы.ВидФинансирования</DataPath>
+					<ContextMenu name="ВидФинансированияКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ВидФинансированияРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="Подразделение" id="38">
+					<DataPath>Объект.ШтатныеЕдиницы.Подразделение</DataPath>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="Должность" id="41">
+					<DataPath>Объект.ШтатныеЕдиницы.Должность</DataPath>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="Разряд" id="44">
+					<DataPath>Объект.ШтатныеЕдиницы.Разряд</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>7</Width>
+					<ContextMenu name="РазрядКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="РазрядРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="Ставка" id="47">
+					<DataPath>Объект.ШтатныеЕдиницы.Ставка</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="СтавкаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СтавкаРасширеннаяПодсказка" id="49"/>
+					<Events>
+						<Event name="OnChange">ПересчитатьИтогиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Оклад" id="50">
+					<DataPath>Объект.ШтатныеЕдиницы.Оклад</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ОкладКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ОкладРасширеннаяПодсказка" id="52"/>
+					<Events>
+						<Event name="OnChange">ПересчитатьИтогиПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаИтоги" id="53">
+			<Group>HorizontalIfPossible</Group>
+			<ExtendedTooltip name="ГруппаИтогиРасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<InputField name="ИтогоОклад" id="55">
+					<DataPath>Объект.ИтогоОклад</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ИтогоОкладКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ИтогоОкладРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ИтогоСтавок" id="58">
+					<DataPath>Объект.ИтогоСтавок</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ИтогоСтавокКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ИтогоСтавокРасширеннаяПодсказка" id="60"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="61">
+			<DataPath>Объект.Комментарий</DataPath>
+			<MultiLine>true</MultiLine>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="63"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="64">
+			<Type>
+				<v8:Type>cfg:DocumentObject.УдалениеШтатнойЕдиницы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПодобратьШтатныеЕдиницы" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПодобратьШтатныеЕдиницы</Action>
+		</Command>
+	</Commands>
+</Form>

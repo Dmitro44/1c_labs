@@ -1,0 +1,46 @@
+{
+  "title": "Расчет и заполнение стажа",
+  "properties": { "autoTitle": false },
+  "elements": [
+    { "group": "horizontalIfPossible", "name": "ГруппаПараметры", "children": [
+      { "input": "Сотрудник", "path": "Сотрудник", "readOnly": true },
+      { "input": "ДатаРасчета", "path": "ДатаРасчета", "title": "Дата расчёта" },
+      { "button": "Рассчитать", "command": "Рассчитать", "defaultButton": true }
+    ]},
+    { "table": "Периоды", "path": "Периоды", "changeRowSet": true, "changeRowOrder": true, "height": 10, "columns": [
+      { "input": "ДатаС", "path": "Периоды.ДатаС", "title": "Дата С" },
+      { "input": "ДатаПо", "path": "Периоды.ДатаПо", "title": "Дата по" },
+      { "input": "Организация", "path": "Периоды.Организация" },
+      { "check": "ВключатьВСтаж", "path": "Периоды.ВключатьВСтаж", "title": "Включать в стаж" }
+    ]},
+    { "group": "horizontalIfPossible", "name": "ГруппаРезультат", "title": "Общий стаж (лет / месяцев / дней)", "showTitle": true, "children": [
+      { "input": "Лет", "path": "Лет", "readOnly": true },
+      { "input": "Месяцев", "path": "Месяцев", "readOnly": true },
+      { "input": "Дней", "path": "Дней", "readOnly": true }
+    ]},
+    { "autoCmdBar": "ФормаКоманднаяПанель", "children": [
+      { "button": "ЗаписатьВСправочник", "command": "ЗаписатьВСправочник", "title": "Записать в справочник" },
+      { "button": "ЗакрытьФорму", "stdCommand": "Close", "title": "Закрыть" }
+    ]}
+  ],
+  "attributes": [
+    { "name": "Сотрудник", "type": "CatalogRef.Сотрудники" },
+    { "name": "ДатаРасчета", "type": "date" },
+    { "name": "Лет", "type": "decimal(10,0)" },
+    { "name": "Месяцев", "type": "decimal(10,0)" },
+    { "name": "Дней", "type": "decimal(10,0)" },
+    { "name": "Периоды", "type": "ValueTable", "columns": [
+      { "name": "ДатаС", "type": "date" },
+      { "name": "ДатаПо", "type": "date" },
+      { "name": "Организация", "type": "string(150)" },
+      { "name": "ВключатьВСтаж", "type": "boolean" }
+    ]}
+  ],
+  "parameters": [
+    { "name": "Сотрудник", "type": "CatalogRef.Сотрудники" }
+  ],
+  "commands": [
+    { "name": "Рассчитать", "action": "РассчитатьОбработка", "shortcut": "Ctrl+R" },
+    { "name": "ЗаписатьВСправочник", "action": "ЗаписатьВСправочникОбработка" }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "title": "Больничные",
+  "elements": [
+    {
+      "autoCmdBar": "ФормаКоманднаяПанель",
+      "children": [
+        {
+          "button": "Печать",
+          "command": "Печать"
+        }
+      ]
+    },
+    {
+      "group": "horizontalIfPossible",
+      "name": "ГруппаШапка",
+      "children": [
+        {
+          "input": "Номер",
+          "path": "Объект.Number",
+          "width": 10,
+          "autoMaxWidth": false
+        },
+        {
+          "input": "Дата",
+          "path": "Объект.Date",
+          "title": "от"
+        }
+      ]
+    },
+    {
+      "table": "Сотрудники",
+      "path": "Объект.Сотрудники",
+      "heightInTableRows": 12,
+      "columns": [
+        {
+          "input": "Сотрудник",
+          "path": "Объект.Сотрудники.Сотрудник"
+        },
+        {
+          "input": "С",
+          "path": "Объект.Сотрудники.С",
+          "width": 12,
+          "autoMaxWidth": false,
+          "format": "ДЛФ=D"
+        },
+        {
+          "input": "По",
+          "path": "Объект.Сотрудники.По",
+          "width": 12,
+          "autoMaxWidth": false,
+          "format": "ДЛФ=D"
+        },
+        {
+          "input": "НомерБольничного",
+          "path": "Объект.Сотрудники.НомерБольничного"
+        }
+      ]
+    },
+    {
+      "input": "Комментарий",
+      "path": "Объект.Комментарий",
+      "multiLine": true
+    }
+  ],
+  "autoCmdBar": "ФормаКоманднаяПанель",
+  "events": {
+    "BeforeWriteAtServer": "ПередЗаписьюНаСервере"
+  },
+  "attributes": [
+    {
+      "name": "Объект",
+      "type": "DocumentObject.Больничные",
+      "main": true
+    }
+  ],
+  "commands": [
+    {
+      "name": "Печать",
+      "action": "Печать"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+[{"type":"HTTPService","name":"ЗагрузкаДанных","rootURL":"loading","urlTemplates":{"Load":{"template":"/load","methods":{"Load":"GET"}}}}]

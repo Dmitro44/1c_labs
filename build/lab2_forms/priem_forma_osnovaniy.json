@@ -1,0 +1,52 @@
+{
+  "title": "Основания приема",
+  "properties": {
+    "windowOpeningMode": "LockOwnerWindow"
+  },
+  "elements": [
+    {
+      "table": "Основания",
+      "path": "Основания",
+      "heightInTableRows": 12,
+      "changeRowSet": false,
+      "changeRowOrder": false,
+      "commandBar": {
+        "children": [
+          {
+            "button": "Выбрать",
+            "command": "Выбрать"
+          }
+        ]
+      },
+      "columns": [
+        {
+          "input": "Причина",
+          "path": "Основания.Причина",
+          "title": "Причина отсутствия"
+        }
+      ]
+    }
+  ],
+  "events": {
+    "OnCreateAtServer": "ПриСозданииНаСервере"
+  },
+  "attributes": [
+    {
+      "name": "Основания",
+      "type": "ValueTable",
+      "columns": [
+        {
+          "name": "Причина",
+          "type": "CatalogRef.ПричинаОтсутствия"
+        }
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "name": "Выбрать",
+      "action": "Выбрать",
+      "defaultButton": true
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "title": "Выбор должностей списком",
+  "properties": {
+    "autoTitle": false
+  },
+  "elements": [
+    {
+      "table": "Список",
+      "path": "Список",
+      "choiceMode": true,
+      "height": 12,
+      "columns": [
+        {
+          "input": "ПолноеНаименование",
+          "path": "Список.ПолноеНаименование",
+          "title": "Полное наименование..."
+        },
+        {
+          "input": "КодДолжности",
+          "path": "Список.КодДолжности",
+          "title": "Код должности"
+        },
+        {
+          "input": "Код",
+          "path": "Список.Code",
+          "title": "Код"
+        }
+      ]
+    },
+    {
+      "cmdBar": "ПанельДобавления",
+      "children": [
+        {
+          "button": "Добавить",
+          "command": "Добавить",
+          "title": "Добавить"
+        },
+        {
+          "button": "КнопкаВыбратьДолжность",
+          "command": "ВыбратьДолжность",
+          "title": "Должность"
+        }
+      ]
+    },
+    {
+      "table": "ВыбранныеДолжности",
+      "path": "ВыбранныеДолжности",
+      "changeRowSet": true,
+      "changeRowOrder": true,
+      "height": 6,
+      "columns": [
+        {
+          "input": "Должность",
+          "path": "ВыбранныеДолжности.Должность",
+          "title": "Должность"
+        },
+        {
+          "input": "ВыбранныйКодДолжности",
+          "path": "ВыбранныеДолжности.КодДолжности",
+          "title": "Код должности"
+        }
+      ]
+    },
+    {
+      "autoCmdBar": "ФормаКоманднаяПанель",
+      "children": [
+        {
+          "button": "Выбрать",
+          "command": "Выбрать",
+          "defaultButton": true
+        },
+        {
+          "button": "Отмена",
+          "stdCommand": "Close"
+        },
+        {
+          "button": "ВыбратьВсех",
+          "command": "ВыбратьВсех",
+          "title": "Выбрать всех",
+          "locationInCommandBar": "InAdditionalSubmenu"
+        }
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "name": "Список",
+      "type": "DynamicList",
+      "main": true,
+      "settings": {
+        "mainTable": "Catalog.Должности",
+        "dynamicDataRead": false
+      }
+    },
+    {
+      "name": "ВыбранныеДолжности",
+      "type": "ValueTable",
+      "columns": [
+        {
+          "name": "Должность",
+          "type": "CatalogRef.Должности"
+        },
+        {
+          "name": "КодДолжности",
+          "type": "string(20)"
+        }
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "name": "Выбрать",
+      "action": "ВыбратьОбработка",
+      "shortcut": "Ctrl+Enter"
+    },
+    {
+      "name": "Добавить",
+      "action": "ДобавитьОбработка"
+    },
+    {
+      "name": "ВыбратьДолжность",
+      "action": "ВыбратьДолжностьОбработка"
+    },
+    {
+      "name": "ВыбратьВсех",
+      "action": "ВыбратьВсехОбработка"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "title": "Просмотр ставок",
+  "properties": {
+    "windowOpeningMode": "LockOwnerWindow"
+  },
+  "elements": [
+    {
+      "table": "Ставки",
+      "path": "Ставки",
+      "heightInTableRows": 14,
+      "changeRowSet": false,
+      "changeRowOrder": false,
+      "commandBar": {
+        "autofill": false
+      },
+      "columns": [
+        {
+          "input": "Подразделение",
+          "path": "Ставки.Подразделение"
+        },
+        {
+          "input": "Должность",
+          "path": "Ставки.Должность"
+        },
+        {
+          "input": "ВидФинансирования",
+          "path": "Ставки.ВидФинансирования",
+          "title": "Финансирование"
+        },
+        {
+          "input": "Разряд",
+          "path": "Ставки.Разряд",
+          "width": 7,
+          "autoMaxWidth": false
+        },
+        {
+          "input": "Ставка",
+          "path": "Ставки.Ставка",
+          "format": "ЧДЦ=2"
+        },
+        {
+          "input": "Оклад",
+          "path": "Ставки.Оклад",
+          "format": "ЧДЦ=2"
+        }
+      ]
+    }
+  ],
+  "events": {
+    "OnCreateAtServer": "ПриСозданииНаСервере"
+  },
+  "attributes": [
+    {
+      "name": "Ставки",
+      "type": "ValueTable",
+      "columns": [
+        {
+          "name": "Подразделение",
+          "type": "CatalogRef.Подразделения"
+        },
+        {
+          "name": "Должность",
+          "type": "CatalogRef.Должности"
+        },
+        {
+          "name": "ВидФинансирования",
+          "type": "EnumRef.ИсточникФинансирования"
+        },
+        {
+          "name": "Разряд",
+          "type": "decimal(2,0)"
+        },
+        {
+          "name": "Ставка",
+          "type": "decimal(5,2)"
+        },
+        {
+          "name": "Оклад",
+          "type": "decimal(15,2)"
+        }
+      ]
+    }
+  ],
+  "parameters": [
+    {
+      "name": "Подразделение",
+      "type": "CatalogRef.Подразделения"
+    },
+    {
+      "name": "Должность",
+      "type": "CatalogRef.Должности"
+    }
+  ]
+}

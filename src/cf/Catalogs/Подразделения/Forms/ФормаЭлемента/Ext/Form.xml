@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Подразделения</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКодНаименование" id="3">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="Код" id="8">
+							<DataPath>Объект.Code</DataPath>
+							<ContextMenu name="КодКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="10"/>
+						</InputField>
+					<InputField name="Наименование" id="5">
+							<DataPath>Объект.Description</DataPath>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="7"/>
+						</InputField>
+						</ChildItems>
+				</UsualGroup>
+				<InputField name="Родитель" id="11">
+					<DataPath>Объект.Parent</DataPath>
+					<v8:Title><v8:item><v8:lang>ru</v8:lang><v8:content>Входит в группу</v8:content></v8:item></v8:Title><ContextMenu name="РодительКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="13"/>
+				</InputField>
+				<InputField name="ПолноеНаименование" id="14">
+					<DataPath>Объект.ПолноеНаименование</DataPath>
+					<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="КраткоеНаименование" id="17">
+					<DataPath>Объект.КраткоеНаименование</DataPath>
+					<ContextMenu name="КраткоеНаименованиеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="КраткоеНаименованиеРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="Руководитель" id="20">
+					<DataPath>Объект.Руководитель</DataPath>
+					<ContextMenu name="РуководительКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="КодПодразделения" id="23">
+					<DataPath>Объект.КодПодразделения</DataPath>
+					<ContextMenu name="КодПодразделенияКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="КодПодразделенияРасширеннаяПодсказка" id="25"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="26">
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="27"/>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="28">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Подразделения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

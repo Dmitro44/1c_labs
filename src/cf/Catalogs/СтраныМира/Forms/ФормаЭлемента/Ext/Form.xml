@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Страны мира</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКодНаименование" id="3">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="Код" id="8">
+							<DataPath>Объект.Code</DataPath>
+							<ContextMenu name="КодКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="10"/>
+						</InputField>
+					<InputField name="Наименование" id="5">
+							<DataPath>Объект.Description</DataPath>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="7"/>
+						</InputField>
+						</ChildItems>
+				</UsualGroup>
+				<InputField name="ПолноеНаименование" id="11">
+					<DataPath>Объект.ПолноеНаименование</DataPath>
+					<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="13"/>
+				</InputField>
+				<InputField name="МеждународноеНаименование" id="14">
+					<DataPath>Объект.МеждународноеНаименование</DataPath>
+					<ContextMenu name="МеждународноеНаименованиеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="МеждународноеНаименованиеРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="КодАльфа2" id="17">
+					<DataPath>Объект.КодАльфа2</DataPath>
+					<ContextMenu name="КодАльфа2КонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="КодАльфа2РасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="КодАльфа3" id="20">
+					<DataPath>Объект.КодАльфа3</DataPath>
+					<ContextMenu name="КодАльфа3КонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="КодАльфа3РасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<CheckBoxField name="УчастникЕАЭС" id="23">
+					<DataPath>Объект.УчастникЕАЭС</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="УчастникЕАЭСКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="УчастникЕАЭСРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="26">
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="27"/>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="28">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СтраныМира</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

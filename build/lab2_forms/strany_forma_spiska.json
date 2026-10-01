@@ -1,0 +1,75 @@
+{
+  "title": "Страны мира",
+  "autoCmdBar": "ФормаКоманднаяПанель",
+  "elements": [
+    {
+      "autoCmdBar": "ФормаКоманднаяПанель",
+      "children": [
+        {
+          "button": "Классификатор",
+          "command": "Классификатор"
+        }
+      ]
+    },
+    {
+      "table": "Список",
+      "path": "Список",
+      "representation": "List",
+      "columns": [
+        {
+          "labelField": "Наименование",
+          "path": "Список.Description"
+        },
+        {
+          "labelField": "Код",
+          "path": "Список.Code",
+          "width": 6,
+          "autoMaxWidth": false
+        },
+        {
+          "labelField": "КодАльфа2",
+          "path": "Список.КодАльфа2",
+          "title": "Код альфа-2",
+          "width": 10,
+          "autoMaxWidth": false
+        },
+        {
+          "labelField": "КодАльфа3",
+          "path": "Список.КодАльфа3",
+          "title": "Код альфа-3",
+          "width": 10,
+          "autoMaxWidth": false
+        },
+        {
+          "labelField": "УчастникЕАЭС",
+          "path": "Список.УчастникЕАЭС",
+          "title": "Участник ЕАЭС"
+        },
+        {
+          "labelField": "ПолноеНаименование",
+          "path": "Список.ПолноеНаименование",
+          "title": "Полное наименование"
+        }
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "name": "Список",
+      "type": "DynamicList",
+      "main": true,
+      "settings": {
+        "mainTable": "Catalog.СтраныМира",
+        "order": [
+          "Description"
+        ]
+      }
+    }
+  ],
+  "commands": [
+    {
+      "name": "Классификатор",
+      "action": "ОткрытьКлассификатор"
+    }
+  ]
+}

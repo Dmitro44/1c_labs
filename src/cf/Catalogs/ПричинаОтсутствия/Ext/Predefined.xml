@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="42b96fa1-6dd4-4364-9fb8-59316aa9ec04">
+		<Name>Больничный</Name>
+		<Code/>
+		<Description>Больничный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e59ef01a-e715-4c88-9fca-5f2d6f2e9f88">
+		<Name>Отпуск</Name>
+		<Code/>
+		<Description>Отпуск</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b56050c0-8ae5-4d53-90ed-245dfcc5aafd">
+		<Name>ДекретныйОтпуск</Name>
+		<Code/>
+		<Description>Декретный отпуск</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5c1971c4-273b-460d-8631-13dc753fac57">
+		<Name>Командировка</Name>
+		<Code/>
+		<Description>Командировка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="83fb8d52-6934-41c4-9939-f9b2594cafef">
+		<Name>Другое</Name>
+		<Code/>
+		<Description>Другое</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

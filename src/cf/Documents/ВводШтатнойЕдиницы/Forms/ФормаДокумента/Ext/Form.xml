@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Ввод штатной единицы</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Загрузить" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Загрузить</CommandName>
+				<ExtendedTooltip name="ЗагрузитьРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="3">
+			<Group>HorizontalIfPossible</Group>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<InputField name="Номер" id="5">
+					<DataPath>Объект.Number</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>10</Width>
+					<ContextMenu name="НомерКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="7"/>
+				</InputField>
+				<InputField name="Дата" id="8">
+					<DataPath>Объект.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="10"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ШтатныеЕдиницы" id="11">
+			<DataPath>Объект.ШтатныеЕдиницы</DataPath>
+			<HeightInTableRows>12</HeightInTableRows>
+			<ContextMenu name="ШтатныеЕдиницыКонтекстноеМеню" id="12"/>
+			<AutoCommandBar name="ШтатныеЕдиницыКоманднаяПанель" id="13">
+				<ChildItems>
+					<Button name="Очистить" id="14">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОчиститьТаблицу</CommandName>
+						<ExtendedTooltip name="ОчиститьРасширеннаяПодсказка" id="15"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ШтатныеЕдиницыРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="ШтатныеЕдиницыСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>ШтатныеЕдиницы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ШтатныеЕдиницыСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ШтатныеЕдиницыСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ШтатныеЕдиницыСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>ШтатныеЕдиницы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ШтатныеЕдиницыСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ШтатныеЕдиницыСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ШтатныеЕдиницыУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>ШтатныеЕдиницы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ШтатныеЕдиницыУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ШтатныеЕдиницыУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ВидФинансирования" id="26">
+					<DataPath>Объект.ШтатныеЕдиницы.ВидФинансирования</DataPath>
+					<ContextMenu name="ВидФинансированияКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ВидФинансированияРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="Подразделение" id="29">
+					<DataPath>Объект.ШтатныеЕдиницы.Подразделение</DataPath>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="Должность" id="32">
+					<DataPath>Объект.ШтатныеЕдиницы.Должность</DataPath>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="Разряд" id="35">
+					<DataPath>Объект.ШтатныеЕдиницы.Разряд</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>7</Width>
+					<ContextMenu name="РазрядКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="РазрядРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="Ставка" id="38">
+					<DataPath>Объект.ШтатныеЕдиницы.Ставка</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="СтавкаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СтавкаРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="OnChange">ПересчитатьИтогиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Оклад" id="41">
+					<DataPath>Объект.ШтатныеЕдиницы.Оклад</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ОкладКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ОкладРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">ПересчитатьИтогиПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаИтоги" id="44">
+			<Group>HorizontalIfPossible</Group>
+			<ExtendedTooltip name="ГруппаИтогиРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<InputField name="ИтогоОклад" id="46">
+					<DataPath>Объект.ИтогоОклад</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ИтогоОкладКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ИтогоОкладРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ИтогоСтавок" id="49">
+					<DataPath>Объект.ИтогоСтавок</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ИтогоСтавокКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ИтогоСтавокРасширеннаяПодсказка" id="51"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="52">
+			<DataPath>Объект.Комментарий</DataPath>
+			<MultiLine>true</MultiLine>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="54"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="55">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВводШтатнойЕдиницы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Загрузить" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Загрузить</Action>
+		</Command>
+		<Command name="ОчиститьТаблицу" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОчиститьТаблицу</Action>
+		</Command>
+	</Commands>
+</Form>

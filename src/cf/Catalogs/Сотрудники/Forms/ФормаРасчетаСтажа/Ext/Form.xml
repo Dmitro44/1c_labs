@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Расчет и заполнение стажа</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ЗаписатьВСправочник" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаписатьВСправочник</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Записать в справочник</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ЗаписатьВСправочникРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ЗакрытьФорму" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Закрыть</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ЗакрытьФормуРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаПараметры" id="5">
+			<Group>HorizontalIfPossible</Group>
+			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="6"/>
+			<ChildItems>
+				<InputField name="Сотрудник" id="7">
+					<DataPath>Сотрудник</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СотрудникКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ДатаРасчета" id="10">
+					<DataPath>ДатаРасчета</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата расчёта</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаРасчетаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаРасчетаРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<Button name="Рассчитать" id="13">
+					<CommandName>Form.Command.Рассчитать</CommandName>
+					<DefaultButton>true</DefaultButton>
+					<ExtendedTooltip name="РассчитатьРасширеннаяПодсказка" id="14"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Периоды" id="15">
+			<DataPath>Периоды</DataPath>
+			<ChangeRowSet>true</ChangeRowSet>
+			<ChangeRowOrder>true</ChangeRowOrder>
+			<Height>10</Height>
+			<ContextMenu name="ПериодыКонтекстноеМеню" id="16"/>
+			<AutoCommandBar name="ПериодыКоманднаяПанель" id="17"/>
+			<ExtendedTooltip name="ПериодыРасширеннаяПодсказка" id="18"/>
+			<SearchStringAddition name="ПериодыСтрокаПоиска" id="19">
+				<AdditionSource>
+					<Item>Периоды</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПериодыСтрокаПоискаКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="ПериодыСтрокаПоискаРасширеннаяПодсказка" id="21"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПериодыСостояниеПросмотра" id="22">
+				<AdditionSource>
+					<Item>Периоды</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПериодыСостояниеПросмотраКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="ПериодыСостояниеПросмотраРасширеннаяПодсказка" id="24"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПериодыУправлениеПоиском" id="25">
+				<AdditionSource>
+					<Item>Периоды</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПериодыУправлениеПоискомКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ПериодыУправлениеПоискомРасширеннаяПодсказка" id="27"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ДатаС" id="28">
+					<DataPath>Периоды.ДатаС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата С</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаСКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ДатаСРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="ДатаПо" id="31">
+					<DataPath>Периоды.ДатаПо</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата по</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаПоКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ДатаПоРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="Организация" id="34">
+					<DataPath>Периоды.Организация</DataPath>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<CheckBoxField name="ВключатьВСтаж" id="37">
+					<DataPath>Периоды.ВключатьВСтаж</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включать в стаж</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="ВключатьВСтажКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ВключатьВСтажРасширеннаяПодсказка" id="39"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаРезультат" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общий стаж (лет / месяцев / дней)</v8:content>
+				</v8:item>
+			</Title>
+			<Group>HorizontalIfPossible</Group>
+			<ShowTitle>true</ShowTitle>
+			<ExtendedTooltip name="ГруппаРезультатРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<InputField name="Лет" id="42">
+					<DataPath>Лет</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ЛетКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ЛетРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="Месяцев" id="45">
+					<DataPath>Месяцев</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="МесяцевКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="МесяцевРасширеннаяПодсказка" id="47"/>
+				</InputField>
+				<InputField name="Дней" id="48">
+					<DataPath>Дней</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ДнейКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ДнейРасширеннаяПодсказка" id="50"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Сотрудник" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаРасчета" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата расчета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Лет" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Месяцев" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяцев</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Дней" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дней</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Периоды" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Периоды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаС" id="57">
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПо" id="58">
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Организация" id="59">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВключатьВСтаж" id="60">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="Сотрудник">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+	<Commands>
+		<Command name="Рассчитать" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>РассчитатьОбработка</Action>
+			<Shortcut>Ctrl+R</Shortcut>
+		</Command>
+		<Command name="ЗаписатьВСправочник" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать в справочник</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗаписатьВСправочникОбработка</Action>
+		</Command>
+	</Commands>
+</Form>

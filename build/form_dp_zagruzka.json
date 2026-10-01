@@ -1,0 +1,19 @@
+{
+  "title": "Загрузка демо-данных и классификатора ОКСМ",
+  "properties": { "autoTitle": false },
+  "elements": [
+    { "label": "Пояснение", "title": "Загружает классификатор стран мира (ОКСМ) и демонстрационные данные справочников.", "hyperlink": false },
+    { "input": "Лог", "path": "Лог", "multiLine": true, "readOnly": true, "height": 6, "title": "Лог загрузки" },
+    { "autoCmdBar": "ФормаКоманднаяПанель", "children": [
+      { "button": "Загрузить", "command": "Загрузить", "defaultButton": true },
+      { "button": "Закрыть", "stdCommand": "Close" }
+    ]}
+  ],
+  "attributes": [
+    { "name": "Объект", "type": "DataProcessorObject.ЗагрузкаДемоДанных", "main": true },
+    { "name": "Лог", "type": "string" }
+  ],
+  "commands": [
+    { "name": "Загрузить", "action": "ЗагрузитьОбработка", "shortcut": "Ctrl+Enter" }
+  ]
+}

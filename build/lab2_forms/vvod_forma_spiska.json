@@ -1,0 +1,49 @@
+{
+  "title": "Ввод штатной единицы",
+  "elements": [
+    {
+      "table": "Список",
+      "path": "Список",
+      "representation": "List",
+      "columns": [
+        {
+          "input": "Дата",
+          "path": "Список.Date",
+          "width": 14,
+          "autoMaxWidth": false
+        },
+        {
+          "input": "Номер",
+          "path": "Список.Number",
+          "width": 12,
+          "autoMaxWidth": false
+        },
+        {
+          "input": "ИтогоОклад",
+          "path": "Список.ИтогоОклад",
+          "format": "ЧДЦ=2"
+        },
+        {
+          "input": "ИтогоСтавок",
+          "path": "Список.ИтогоСтавок",
+          "format": "ЧДЦ=2"
+        },
+        {
+          "input": "Комментарий",
+          "path": "Список.Комментарий"
+        }
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "name": "Список",
+      "type": "DynamicList",
+      "main": true,
+      "settings": {
+        "mainTable": "Document.ВводШтатнойЕдиницы",
+        "autoSaveUserSettings": true
+      }
+    }
+  ]
+}

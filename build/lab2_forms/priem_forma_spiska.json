@@ -1,0 +1,56 @@
+{
+  "title": "Прием на работу",
+  "elements": [
+    {
+      "table": "Список",
+      "path": "Список",
+      "representation": "List",
+      "columns": [
+        {
+          "input": "Дата",
+          "path": "Список.Date",
+          "width": 14,
+          "autoMaxWidth": false
+        },
+        {
+          "input": "Номер",
+          "path": "Список.Number",
+          "width": 12,
+          "autoMaxWidth": false
+        },
+        {
+          "input": "Сотрудник",
+          "path": "Список.Сотрудник"
+        },
+        {
+          "input": "Подразделение",
+          "path": "Список.Подразделение"
+        },
+        {
+          "input": "Должность",
+          "path": "Список.Должность"
+        },
+        {
+          "input": "ВидРаботы",
+          "path": "Список.ВидРаботы"
+        },
+        {
+          "input": "Ставка",
+          "path": "Список.Ставка",
+          "format": "ЧДЦ=2"
+        }
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "name": "Список",
+      "type": "DynamicList",
+      "main": true,
+      "settings": {
+        "mainTable": "Document.ПриемНаРаботу",
+        "autoSaveUserSettings": true
+      }
+    }
+  ]
+}

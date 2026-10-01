@@ -1,0 +1,98 @@
+{
+  "title": "Подбор замещающих",
+  "properties": {
+    "windowOpeningMode": "LockOwnerWindow"
+  },
+  "elements": [
+    {
+      "table": "Отсутствующие",
+      "path": "Отсутствующие",
+      "heightInTableRows": 14,
+      "changeRowSet": false,
+      "changeRowOrder": false,
+      "commandBar": {
+        "children": [
+          {
+            "button": "Выбрать",
+            "command": "Выбрать"
+          }
+        ]
+      },
+      "columns": [
+        {
+          "input": "Сотрудник",
+          "path": "Отсутствующие.Сотрудник"
+        },
+        {
+          "input": "ПричинаОтсутствия",
+          "path": "Отсутствующие.ПричинаОтсутствия",
+          "title": "Причина отсутствия"
+        },
+        {
+          "input": "Подразделение",
+          "path": "Отсутствующие.Подразделение"
+        },
+        {
+          "input": "Должность",
+          "path": "Отсутствующие.Должность"
+        },
+        {
+          "input": "ДатаНачала",
+          "path": "Отсутствующие.ДатаНачала",
+          "width": 12,
+          "autoMaxWidth": false,
+          "format": "ДЛФ=D"
+        },
+        {
+          "input": "ДатаОкончания",
+          "path": "Отсутствующие.ДатаОкончания",
+          "width": 12,
+          "autoMaxWidth": false,
+          "format": "ДЛФ=D"
+        }
+      ]
+    }
+  ],
+  "events": {
+    "OnCreateAtServer": "ПриСозданииНаСервере"
+  },
+  "attributes": [
+    {
+      "name": "Отсутствующие",
+      "type": "ValueTable",
+      "columns": [
+        {
+          "name": "Сотрудник",
+          "type": "CatalogRef.Сотрудники"
+        },
+        {
+          "name": "ПричинаОтсутствия",
+          "type": "CatalogRef.ПричинаОтсутствия"
+        },
+        {
+          "name": "Подразделение",
+          "type": "CatalogRef.Подразделения"
+        },
+        {
+          "name": "Должность",
+          "type": "CatalogRef.Должности"
+        },
+        {
+          "name": "ДатаНачала",
+          "type": "date"
+        },
+        {
+          "name": "ДатаОкончания",
+          "type": "date"
+        }
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "name": "Выбрать",
+      "action": "Выбрать",
+      "defaultButton": true
+    }
+  ]
+}
