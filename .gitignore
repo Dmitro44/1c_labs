@@ -15,3 +15,7 @@ Labs_1s/1Cv8Log/
 Labs_1s/1Cv8.1CD.backup_*
 Labs_1s/1Cv8snc.1CD
 Labs_1s/1Cv8JobScheduler/
+
+# кэш-файлы платформы (появляются и исчезают при запусках)
+Labs_1s/1Cv8.1CL
+Labs_1s/1Cv8.cgr
