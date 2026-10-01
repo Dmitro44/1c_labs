@@ -6,7 +6,7 @@
 			<v8:content>Должность</v8:content>
 		</v8:item>
 	</Title>
-	<AutoTitle>true</AutoTitle>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="1">
@@ -96,9 +96,9 @@
 									<v8:content>Тарифный разряд</v8:content>
 								</v8:item>
 							</Title>
-							<SpinButton>true</SpinButton>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MaxWidth>15</MaxWidth>
+							<SpinButton>true</SpinButton>
 							<ContextMenu name="РазрядКонтекстноеМеню" id="36"/>
 							<ExtendedTooltip name="РазрядРасширеннаяПодсказка" id="37"/>
 						</InputField>
@@ -223,14 +223,12 @@
 					<ChildItems>
 						<CheckBoxField name="ПодлежитАттестации" id="87">
 							<DataPath>Объект.ПодлежитАттестации</DataPath>
-							<CheckBoxType>Auto</CheckBoxType>
 							<TitleLocation>Right</TitleLocation>
 							<ContextMenu name="ПодлежитАттестацииКонтекстноеМеню" id="88"/>
 							<ExtendedTooltip name="ПодлежитАттестацииРасширеннаяПодсказка" id="89"/>
 						</CheckBoxField>
 						<CheckBoxField name="ОтношениеКПедагогическомуПерсоналу" id="90">
 							<DataPath>Объект.ОтношениеКПедагогическомуПерсоналу</DataPath>
-							<CheckBoxType>Auto</CheckBoxType>
 							<TitleLocation>Right</TitleLocation>
 							<ContextMenu name="ОтношениеКПедагогическомуПерсоналуКонтекстноеМеню" id="91"/>
 							<ExtendedTooltip name="ОтношениеКПедагогическомуПерсоналуРасширеннаяПодсказка" id="92"/>

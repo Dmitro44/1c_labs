@@ -6,18 +6,19 @@
 			<v8:content>Просмотр ставок</v8:content>
 		</v8:item>
 	</Title>
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
-	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<Table name="Ставки" id="1">
-			<DataPath>Ставки</DataPath>
 			<ChangeRowSet>false</ChangeRowSet>
 			<ChangeRowOrder>false</ChangeRowOrder>
 			<HeightInTableRows>14</HeightInTableRows>
+			<DataPath>Ставки</DataPath>
+			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="СтавкиКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СтавкиКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
@@ -71,8 +72,8 @@
 				</InputField>
 				<InputField name="Разряд" id="23">
 					<DataPath>Ставки.Разряд</DataPath>
-					<AutoMaxWidth>false</AutoMaxWidth>
 					<Width>7</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="РазрядКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="РазрядРасширеннаяПодсказка" id="25"/>
 				</InputField>

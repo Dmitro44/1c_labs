@@ -6,18 +6,19 @@
 			<v8:content>Основания приема</v8:content>
 		</v8:item>
 	</Title>
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
-	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<Table name="Основания" id="1">
-			<DataPath>Основания</DataPath>
 			<ChangeRowSet>false</ChangeRowSet>
 			<ChangeRowOrder>false</ChangeRowOrder>
 			<HeightInTableRows>12</HeightInTableRows>
+			<DataPath>Основания</DataPath>
+			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="ОснованияКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="ОснованияКоманднаяПанель" id="3">
 				<ChildItems>

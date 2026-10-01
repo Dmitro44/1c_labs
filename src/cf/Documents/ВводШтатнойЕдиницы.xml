@@ -61,8 +61,8 @@
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ШтатныеЕдиницы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрРаботыСоШтатнымРасписанием</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ШтатныеЕдиницы</xr:Item>
 			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
 			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
@@ -212,6 +212,8 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
 			<TabularSection uuid="97d4c00f-d46c-4b35-859f-04269f3f8f92">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ВводШтатнойЕдиницы.ШтатныеЕдиницы" category="TabularSection">
@@ -505,8 +507,6 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаДокумента</Form>
-			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

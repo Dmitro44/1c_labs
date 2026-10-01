@@ -7,6 +7,9 @@
 		</v8:item>
 	</Title>
 	<AutoTitle>false</AutoTitle>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="Печать" id="1">
@@ -26,8 +29,8 @@
 			<ChildItems>
 				<InputField name="Номер" id="5">
 					<DataPath>Объект.Number</DataPath>
-					<AutoMaxWidth>false</AutoMaxWidth>
 					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="НомерКонтекстноеМеню" id="6"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="7"/>
 				</InputField>
@@ -45,8 +48,9 @@
 			</ChildItems>
 		</UsualGroup>
 		<Table name="Сотрудники" id="11">
-			<DataPath>Объект.Сотрудники</DataPath>
 			<HeightInTableRows>12</HeightInTableRows>
+			<DataPath>Объект.Сотрудники</DataPath>
+			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="СотрудникиКонтекстноеМеню" id="12"/>
 			<AutoCommandBar name="СотрудникиКоманднаяПанель" id="13"/>
 			<ExtendedTooltip name="СотрудникиРасширеннаяПодсказка" id="14"/>
@@ -82,8 +86,8 @@
 				</InputField>
 				<InputField name="С" id="27">
 					<DataPath>Объект.Сотрудники.С</DataPath>
-					<AutoMaxWidth>false</AutoMaxWidth>
 					<Width>12</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<Format>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -95,8 +99,8 @@
 				</InputField>
 				<InputField name="По" id="30">
 					<DataPath>Объект.Сотрудники.По</DataPath>
-					<AutoMaxWidth>false</AutoMaxWidth>
 					<Width>12</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<Format>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -115,8 +119,8 @@
 		</Table>
 		<InputField name="Комментарий" id="36">
 			<DataPath>Объект.Комментарий</DataPath>
-			<MultiLine>true</MultiLine>
 			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="37"/>
 			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="38"/>
 		</InputField>

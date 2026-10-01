@@ -328,6 +328,8 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаПодбора</Form>
 			<TabularSection uuid="4b0bd7dd-6b56-437c-80ca-f3fa3e8c9f9c">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.УдалениеШтатнойЕдиницы.ШтатныеЕдиницы" category="TabularSection">
@@ -621,8 +623,6 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаДокумента</Form>
-			<Form>ФормаПодбора</Form>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

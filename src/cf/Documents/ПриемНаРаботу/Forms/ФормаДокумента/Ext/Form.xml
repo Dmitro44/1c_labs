@@ -7,10 +7,13 @@
 		</v8:item>
 	</Title>
 	<AutoTitle>false</AutoTitle>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
-		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="1">
@@ -30,8 +33,8 @@
 				</InputField>
 				<InputField name="Номер" id="6">
 					<DataPath>Объект.Number</DataPath>
-					<AutoMaxWidth>false</AutoMaxWidth>
 					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="НомерКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="8"/>
 				</InputField>
@@ -181,6 +184,7 @@
 							</ChildItems>
 						</UsualGroup>
 						<Button name="ПроверитьСтавки" id="46">
+							<Type>UsualButton</Type>
 							<CommandName>Form.Command.ПроверитьСтавки</CommandName>
 							<ExtendedTooltip name="ПроверитьСтавкиРасширеннаяПодсказка" id="47"/>
 						</Button>
@@ -282,6 +286,7 @@
 							</ChildItems>
 						</UsualGroup>
 						<Button name="ПодобратьОснования" id="74">
+							<Type>UsualButton</Type>
 							<CommandName>Form.Command.ПодобратьОснования</CommandName>
 							<Title>
 								<v8:item>
@@ -389,6 +394,7 @@
 									</ChildItems>
 								</UsualGroup>
 								<Button name="ПодобратьЗамещающих" id="102">
+									<Type>UsualButton</Type>
 									<CommandName>Form.Command.ПодобратьЗамещающих</CommandName>
 									<Title>
 										<v8:item>
@@ -441,8 +447,9 @@
 					<ExtendedTooltip name="СтраницаНачисленияРасширеннаяПодсказка" id="113"/>
 					<ChildItems>
 						<Table name="Надбавки" id="114">
-							<DataPath>Объект.Надбавки</DataPath>
 							<HeightInTableRows>10</HeightInTableRows>
+							<DataPath>Объект.Надбавки</DataPath>
+							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="НадбавкиКонтекстноеМеню" id="115"/>
 							<AutoCommandBar name="НадбавкиКоманднаяПанель" id="116"/>
 							<ExtendedTooltip name="НадбавкиРасширеннаяПодсказка" id="117"/>
@@ -478,8 +485,8 @@
 								</InputField>
 								<InputField name="Размер" id="130">
 									<DataPath>Объект.Надбавки.Размер</DataPath>
-									<AutoMaxWidth>false</AutoMaxWidth>
 									<Width>10</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<Format>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -502,8 +509,8 @@
 								</InputField>
 								<InputField name="Начало" id="136">
 									<DataPath>Объект.Надбавки.Начало</DataPath>
-									<AutoMaxWidth>false</AutoMaxWidth>
 									<Width>12</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<Format>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -515,8 +522,8 @@
 								</InputField>
 								<InputField name="Конец" id="139">
 									<DataPath>Объект.Надбавки.Конец</DataPath>
-									<AutoMaxWidth>false</AutoMaxWidth>
 									<Width>12</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<Format>
 										<v8:item>
 											<v8:lang>ru</v8:lang>

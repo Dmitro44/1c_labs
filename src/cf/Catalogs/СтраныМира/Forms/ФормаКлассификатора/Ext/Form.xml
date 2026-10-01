@@ -10,10 +10,10 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<Table name="Список" id="1">
-			<DataPath>Список</DataPath>
 			<Representation>List</Representation>
 			<CommandBarLocation>Top</CommandBarLocation>
-			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
+			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -77,8 +77,8 @@
 				</LabelField>
 				<LabelField name="Код" id="21">
 					<DataPath>Список.Code</DataPath>
-					<AutoMaxWidth>false</AutoMaxWidth>
 					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="КодКонтекстноеМеню" id="22"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="23"/>
 				</LabelField>
@@ -90,8 +90,8 @@
 							<v8:content>Код альфа 2</v8:content>
 						</v8:item>
 					</Title>
-					<AutoMaxWidth>false</AutoMaxWidth>
 					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="КодАльфа2КонтекстноеМеню" id="25"/>
 					<ExtendedTooltip name="КодАльфа2РасширеннаяПодсказка" id="26"/>
 				</LabelField>
@@ -103,8 +103,8 @@
 							<v8:content>Код альфа 3</v8:content>
 						</v8:item>
 					</Title>
-					<AutoMaxWidth>false</AutoMaxWidth>
 					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="КодАльфа3КонтекстноеМеню" id="28"/>
 					<ExtendedTooltip name="КодАльфа3РасширеннаяПодсказка" id="29"/>
 				</LabelField>
@@ -143,7 +143,6 @@
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<MainTable>Catalog.СтраныМира</MainTable>
-				<AutoSaveUserSettings>true</AutoSaveUserSettings>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
