@@ -65,6 +65,7 @@
       "settings": {
         "mainTable": "Catalog.СтраныМира",
         "autoSaveUserSettings": true,
+        "listSettings": { "order": "" },
         "order": [
           "Description"
         ]

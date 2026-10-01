@@ -11,9 +11,8 @@
 		<ChildItems>
 			<Button name="Выбрать" id="1">
 				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.Выбрать</CommandName>
-				<ButtonImportance>Main</ButtonImportance>
+				<DefaultButton>true</DefaultButton>
 				<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="2"/>
 			</Button>
 			<Button name="Отмена" id="3">
@@ -37,10 +36,9 @@
 	</AutoCommandBar>
 	<ChildItems>
 		<Table name="Список" id="7">
-			<CommandBarLocation>None</CommandBarLocation>
-			<Height>12</Height>
-			<ChoiceMode>true</ChoiceMode>
 			<DataPath>Список</DataPath>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ChoiceMode>true</ChoiceMode>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -56,6 +54,7 @@
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<Height>12</Height>
 			<ContextMenu name="СписокКонтекстноеМеню" id="8"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="9">
 				<Autofill>false</Autofill>
@@ -149,9 +148,10 @@
 			</ChildItems>
 		</CommandBar>
 		<Table name="ВыбранныеДолжности" id="35">
-			<Height>6</Height>
 			<DataPath>ВыбранныеДолжности</DataPath>
-			<RowFilter xsi:nil="true"/>
+			<ChangeRowSet>true</ChangeRowSet>
+			<ChangeRowOrder>true</ChangeRowOrder>
+			<Height>6</Height>
 			<ContextMenu name="ВыбранныеДолжностиКонтекстноеМеню" id="36"/>
 			<AutoCommandBar name="ВыбранныеДолжностиКоманднаяПанель" id="37"/>
 			<ExtendedTooltip name="ВыбранныеДолжностиРасширеннаяПодсказка" id="38"/>
@@ -269,8 +269,8 @@
 					<v8:content>Выбрать</v8:content>
 				</v8:item>
 			</Title>
-			<Shortcut>Ctrl+Enter</Shortcut>
 			<Action>ВыбратьОбработка</Action>
+			<Shortcut>Ctrl+Enter</Shortcut>
 		</Command>
 		<Command name="Добавить" id="59">
 			<Title>

@@ -11,9 +11,8 @@
 		<ChildItems>
 			<Button name="Загрузить" id="1">
 				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.Загрузить</CommandName>
-				<ButtonImportance>Main</ButtonImportance>
+				<DefaultButton>true</DefaultButton>
 				<ExtendedTooltip name="ЗагрузитьРасширеннаяПодсказка" id="2"/>
 			</Button>
 			<Button name="Закрыть" id="3">
@@ -36,16 +35,16 @@
 		</LabelDecoration>
 		<InputField name="Лог" id="8">
 			<DataPath>Лог</DataPath>
-			<ReadOnly>true</ReadOnly>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Лог загрузки</v8:content>
 				</v8:item>
 			</Title>
+			<ReadOnly>true</ReadOnly>
+			<MultiLine>true</MultiLine>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<Height>6</Height>
-			<MultiLine>true</MultiLine>
 			<ContextMenu name="ЛогКонтекстноеМеню" id="9"/>
 			<ExtendedTooltip name="ЛогРасширеннаяПодсказка" id="10"/>
 		</InputField>
@@ -81,8 +80,8 @@
 					<v8:content>Загрузить</v8:content>
 				</v8:item>
 			</Title>
-			<Shortcut>Ctrl+Enter</Shortcut>
 			<Action>ЗагрузитьОбработка</Action>
+			<Shortcut>Ctrl+Enter</Shortcut>
 		</Command>
 	</Commands>
 </Form>

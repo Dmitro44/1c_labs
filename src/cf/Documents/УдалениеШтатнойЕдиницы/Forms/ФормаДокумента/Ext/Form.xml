@@ -7,13 +7,10 @@
 		</v8:item>
 	</Title>
 	<AutoTitle>false</AutoTitle>
-	<AutoTime>CurrentOrLast</AutoTime>
-	<UsePostingMode>Auto</UsePostingMode>
-	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
-		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="1">
@@ -73,8 +70,8 @@
 			<ChildItems>
 				<InputField name="Номер" id="14">
 					<DataPath>Объект.Number</DataPath>
-					<Width>10</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>10</Width>
 					<ContextMenu name="НомерКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="16"/>
 				</InputField>
@@ -92,9 +89,9 @@
 			</ChildItems>
 		</UsualGroup>
 		<Table name="ШтатныеЕдиницы" id="20">
-			<HeightInTableRows>12</HeightInTableRows>
 			<DataPath>Объект.ШтатныеЕдиницы</DataPath>
-			<RowFilter xsi:nil="true"/>
+			<ChangeRowSet>true</ChangeRowSet>
+			<HeightInTableRows>12</HeightInTableRows>
 			<ContextMenu name="ШтатныеЕдиницыКонтекстноеМеню" id="21"/>
 			<AutoCommandBar name="ШтатныеЕдиницыКоманднаяПанель" id="22">
 				<ChildItems>
@@ -148,8 +145,8 @@
 				</InputField>
 				<InputField name="Разряд" id="44">
 					<DataPath>Объект.ШтатныеЕдиницы.Разряд</DataPath>
-					<Width>7</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>7</Width>
 					<ContextMenu name="РазрядКонтекстноеМеню" id="45"/>
 					<ExtendedTooltip name="РазрядРасширеннаяПодсказка" id="46"/>
 				</InputField>
@@ -213,8 +210,8 @@
 		</UsualGroup>
 		<InputField name="Комментарий" id="61">
 			<DataPath>Объект.Комментарий</DataPath>
-			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
+			<AutoMaxWidth>false</AutoMaxWidth>
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="62"/>
 			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="63"/>
 		</InputField>

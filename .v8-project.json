@@ -1,0 +1,22 @@
+{
+  "v8path": "/opt/1cv8/8.5.1.1522",
+  "databases": [
+    {
+      "id": "labs",
+      "name": "Study",
+      "type": "file",
+      "path": "/Users/daniil_mariyn/Documents/University/7_SEM/TOFD/Labs_1s",
+      "aliases": ["labs", "study", "лабы"],
+      "configSrc": "src/cf"
+    },
+    {
+      "id": "scratch",
+      "name": "Скретч",
+      "type": "file",
+      "path": "/Users/daniil_mariyn/Documents/University/7_SEM/TOFD/scratch_1s",
+      "aliases": ["scratch"],
+      "configSrc": "src/cf"
+    }
+  ],
+  "default": "labs"
+}

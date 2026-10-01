@@ -62,12 +62,12 @@
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КомплектованияСотрудников</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаСотрудников</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РегистрНакопленияНадбавок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПериодОтпуска</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаОтсутствияСотрудников</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаЗамещенияСотрудников</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаСовмещений</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаОтсутствияСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РегистрНакопленияНадбавок</xr:Item>
 			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
 			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
@@ -1060,11 +1060,6 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаДокумента</Form>
-			<Form>ФормаСписка</Form>
-			<Form>ФормаПросмотраСтавок</Form>
-			<Form>ФормаПодбораЗамещающих</Form>
-			<Form>ФормаПодбораОснований</Form>
 			<TabularSection uuid="3a880495-4ceb-48ca-aeda-0acd2d22477a">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ПриемНаРаботу.Надбавки" category="TabularSection">
@@ -1317,6 +1312,11 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаПросмотраСтавок</Form>
+			<Form>ФормаПодбораЗамещающих</Form>
+			<Form>ФормаПодбораОснований</Form>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

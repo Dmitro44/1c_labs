@@ -123,7 +123,6 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаДокумента</Form>
 			<TabularSection uuid="40cc3c72-1da2-44d7-9f06-bd1e4cf76f84">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.Больничные.Сотрудники" category="TabularSection">
@@ -338,6 +337,7 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Form>ФормаДокумента</Form>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

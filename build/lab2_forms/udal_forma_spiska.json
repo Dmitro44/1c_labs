@@ -1,0 +1,61 @@
+{
+  "title": "Удаление штатной единицы",
+  "elements": [
+    {
+      "table": "Список",
+      "path": "Список",
+      "representation": "List",
+      "columns": [
+        {
+          "input": "Дата",
+          "path": "Список.Date",
+          "width": 14,
+          "autoMaxWidth": false
+        },
+        {
+          "input": "Номер",
+          "path": "Список.Number",
+          "width": 12,
+          "autoMaxWidth": false
+        },
+        {
+          "input": "Подразделение",
+          "path": "Список.Подразделение"
+        },
+        {
+          "input": "ИтогоСтавок",
+          "path": "Список.ИтогоСтавок",
+          "format": "ЧДЦ=2"
+        },
+        {
+          "input": "ИтогоОклад",
+          "path": "Список.ИтогоОклад",
+          "format": "ЧДЦ=2"
+        },
+        {
+          "input": "Комментарий",
+          "path": "Список.Комментарий"
+        },
+        {
+          "input": "Финансирование",
+          "path": "Список.Финансирование"
+        },
+        {
+          "input": "Должность",
+          "path": "Список.Должность"
+        }
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "name": "Список",
+      "type": "DynamicList",
+      "main": true,
+      "settings": {
+        "mainTable": "Document.УдалениеШтатнойЕдиницы",
+        "autoSaveUserSettings": true
+      }
+    }
+  ]
+}

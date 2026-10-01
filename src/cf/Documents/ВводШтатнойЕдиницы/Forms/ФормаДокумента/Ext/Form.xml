@@ -7,9 +7,6 @@
 		</v8:item>
 	</Title>
 	<AutoTitle>false</AutoTitle>
-	<AutoTime>CurrentOrLast</AutoTime>
-	<UsePostingMode>Auto</UsePostingMode>
-	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="Загрузить" id="1">
@@ -29,8 +26,8 @@
 			<ChildItems>
 				<InputField name="Номер" id="5">
 					<DataPath>Объект.Number</DataPath>
-					<Width>10</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>10</Width>
 					<ContextMenu name="НомерКонтекстноеМеню" id="6"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="7"/>
 				</InputField>
@@ -48,9 +45,8 @@
 			</ChildItems>
 		</UsualGroup>
 		<Table name="ШтатныеЕдиницы" id="11">
-			<HeightInTableRows>12</HeightInTableRows>
 			<DataPath>Объект.ШтатныеЕдиницы</DataPath>
-			<RowFilter xsi:nil="true"/>
+			<HeightInTableRows>12</HeightInTableRows>
 			<ContextMenu name="ШтатныеЕдиницыКонтекстноеМеню" id="12"/>
 			<AutoCommandBar name="ШтатныеЕдиницыКоманднаяПанель" id="13">
 				<ChildItems>
@@ -104,8 +100,8 @@
 				</InputField>
 				<InputField name="Разряд" id="35">
 					<DataPath>Объект.ШтатныеЕдиницы.Разряд</DataPath>
-					<Width>7</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>7</Width>
 					<ContextMenu name="РазрядКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="РазрядРасширеннаяПодсказка" id="37"/>
 				</InputField>
@@ -169,8 +165,8 @@
 		</UsualGroup>
 		<InputField name="Комментарий" id="52">
 			<DataPath>Объект.Комментарий</DataPath>
-			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
+			<AutoMaxWidth>false</AutoMaxWidth>
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="53"/>
 			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="54"/>
 		</InputField>

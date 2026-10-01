@@ -10,9 +10,9 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<Table name="Список" id="1">
+			<DataPath>Список</DataPath>
 			<Representation>List</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
-			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -60,15 +60,15 @@
 			<ChildItems>
 				<InputField name="Дата" id="14">
 					<DataPath>Список.Date</DataPath>
-					<Width>14</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>14</Width>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="16"/>
 				</InputField>
 				<InputField name="Номер" id="17">
 					<DataPath>Список.Number</DataPath>
-					<Width>12</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>12</Width>
 					<ContextMenu name="НомерКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="19"/>
 				</InputField>
@@ -116,6 +116,7 @@
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<MainTable>Document.ПриемНаРаботу</MainTable>
+				<AutoSaveUserSettings>true</AutoSaveUserSettings>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

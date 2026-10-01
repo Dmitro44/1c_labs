@@ -10,10 +10,10 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<Table name="Список" id="1">
+			<DataPath>Список</DataPath>
 			<Representation>List</Representation>
 			<CommandBarLocation>Top</CommandBarLocation>
-			<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
-			<DataPath>Список</DataPath>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -77,8 +77,8 @@
 				</LabelField>
 				<LabelField name="Код" id="21">
 					<DataPath>Список.Code</DataPath>
-					<Width>6</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>6</Width>
 					<ContextMenu name="КодКонтекстноеМеню" id="22"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="23"/>
 				</LabelField>
@@ -90,8 +90,8 @@
 							<v8:content>Код альфа 2</v8:content>
 						</v8:item>
 					</Title>
-					<Width>10</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>10</Width>
 					<ContextMenu name="КодАльфа2КонтекстноеМеню" id="25"/>
 					<ExtendedTooltip name="КодАльфа2РасширеннаяПодсказка" id="26"/>
 				</LabelField>
@@ -103,8 +103,8 @@
 							<v8:content>Код альфа 3</v8:content>
 						</v8:item>
 					</Title>
-					<Width>10</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>10</Width>
 					<ContextMenu name="КодАльфа3КонтекстноеМеню" id="28"/>
 					<ExtendedTooltip name="КодАльфа3РасширеннаяПодсказка" id="29"/>
 				</LabelField>
@@ -143,25 +143,14 @@
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<MainTable>Catalog.СтраныМира</MainTable>
+				<AutoSaveUserSettings>true</AutoSaveUserSettings>
 				<ListSettings>
-					<dcsset:filter>
-						<dcsset:viewMode>Normal</dcsset:viewMode>
-						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
-					</dcsset:filter>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
 							<dcsset:field>Description</dcsset:field>
 							<dcsset:orderType>Asc</dcsset:orderType>
 						</dcsset:item>
-						<dcsset:viewMode>Normal</dcsset:viewMode>
-						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
-					<dcsset:conditionalAppearance>
-						<dcsset:viewMode>Normal</dcsset:viewMode>
-						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
-					</dcsset:conditionalAppearance>
-					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
-					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
 		</Attribute>

@@ -11,9 +11,8 @@
 		<ChildItems>
 			<Button name="Выбрать" id="1">
 				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.Выбрать</CommandName>
-				<ButtonImportance>Main</ButtonImportance>
+				<DefaultButton>true</DefaultButton>
 				<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="2"/>
 			</Button>
 		</ChildItems>
@@ -74,11 +73,10 @@
 			</ChildItems>
 		</UsualGroup>
 		<Table name="ШтатныеЕдиницы" id="14">
+			<DataPath>ШтатныеЕдиницы</DataPath>
 			<ChangeRowSet>false</ChangeRowSet>
 			<ChangeRowOrder>false</ChangeRowOrder>
 			<HeightInTableRows>14</HeightInTableRows>
-			<DataPath>ШтатныеЕдиницы</DataPath>
-			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="ШтатныеЕдиницыКонтекстноеМеню" id="15"/>
 			<AutoCommandBar name="ШтатныеЕдиницыКоманднаяПанель" id="16">
 				<ChildItems>
@@ -117,6 +115,7 @@
 			<ChildItems>
 				<CheckBoxField name="Пометка" id="29">
 					<DataPath>ШтатныеЕдиницы.Пометка</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
 					<TitleLocation>None</TitleLocation>
 					<ContextMenu name="ПометкаКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ПометкаРасширеннаяПодсказка" id="31"/>
@@ -138,8 +137,8 @@
 				</InputField>
 				<InputField name="Разряд" id="41">
 					<DataPath>ШтатныеЕдиницы.Разряд</DataPath>
-					<Width>7</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>7</Width>
 					<ContextMenu name="РазрядКонтекстноеМеню" id="42"/>
 					<ExtendedTooltip name="РазрядРасширеннаяПодсказка" id="43"/>
 				</InputField>

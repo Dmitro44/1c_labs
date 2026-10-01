@@ -18,9 +18,9 @@
 	</AutoCommandBar>
 	<ChildItems>
 		<Table name="Список" id="3">
+			<DataPath>Список</DataPath>
 			<Representation>List</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
-			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -73,8 +73,8 @@
 				</LabelField>
 				<LabelField name="Код" id="19">
 					<DataPath>Список.Code</DataPath>
-					<Width>6</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>6</Width>
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
@@ -86,8 +86,8 @@
 							<v8:content>Код альфа-2</v8:content>
 						</v8:item>
 					</Title>
-					<Width>10</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>10</Width>
 					<ContextMenu name="КодАльфа2КонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="КодАльфа2РасширеннаяПодсказка" id="24"/>
 				</LabelField>
@@ -99,8 +99,8 @@
 							<v8:content>Код альфа-3</v8:content>
 						</v8:item>
 					</Title>
-					<Width>10</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Width>10</Width>
 					<ContextMenu name="КодАльфа3КонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="КодАльфа3РасширеннаяПодсказка" id="27"/>
 				</LabelField>
