@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<InformationRegister uuid="9194a656-478d-46bf-8ab9-8dc40e3568d2">
+	<InformationRegister uuid="383f5cb4-b6e4-4d42-a0ac-4602b68c1c8f">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.БольничныеПериоды" category="Record">
-				<xr:TypeId>3001df14-63d6-42af-99fb-4dd3ece7bd1a</xr:TypeId>
-				<xr:ValueId>86e275c5-d1e6-486c-8241-2cc24ab2e1a1</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.ИсторияРабот" category="Record">
+				<xr:TypeId>38fbd0f4-51ca-415c-b54c-c9fa6df69d14</xr:TypeId>
+				<xr:ValueId>65130b84-cbde-4fd7-bc7f-754a8266595f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.БольничныеПериоды" category="Manager">
-				<xr:TypeId>590463c9-b1b4-4c65-bf61-6896ed6a4f06</xr:TypeId>
-				<xr:ValueId>a864cfb5-f43a-4f1c-abbf-753770b51680</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.ИсторияРабот" category="Manager">
+				<xr:TypeId>687a09fd-ddf8-483c-802f-87f4485a984e</xr:TypeId>
+				<xr:ValueId>38958e2c-fe24-40ee-8d52-91e880b6c609</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.БольничныеПериоды" category="Selection">
-				<xr:TypeId>bffbd777-40e5-4d3e-8632-f11807987501</xr:TypeId>
-				<xr:ValueId>0143cf48-eaa1-4d48-a8e4-cdfdb59991d8</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.ИсторияРабот" category="Selection">
+				<xr:TypeId>aef12f4b-9d2c-4c36-9ade-a4881f92166e</xr:TypeId>
+				<xr:ValueId>7083acd5-ef3d-47c8-89ad-60b2872da1bc</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.БольничныеПериоды" category="List">
-				<xr:TypeId>18da9644-64a5-4827-87fd-cc0a9d6d20dc</xr:TypeId>
-				<xr:ValueId>a5694ae1-dff5-4277-9b75-b6c4fc9a0692</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.ИсторияРабот" category="List">
+				<xr:TypeId>2707f964-a925-4a26-8d6e-9ae4d67412d9</xr:TypeId>
+				<xr:ValueId>4345705a-56fc-4a32-9815-7f9c4b57575e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.БольничныеПериоды" category="RecordSet">
-				<xr:TypeId>32337a36-f0de-472d-ba18-102f649e9715</xr:TypeId>
-				<xr:ValueId>490756f9-8173-4aac-8c90-272d0aa3360a</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ИсторияРабот" category="RecordSet">
+				<xr:TypeId>b2bd13bd-12fc-4406-9127-c54579a3775c</xr:TypeId>
+				<xr:ValueId>4e644568-158c-444c-bea1-7f3b5580cc16</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.БольничныеПериоды" category="RecordKey">
-				<xr:TypeId>55a50ff2-3f9e-4898-8e23-5ae084f1e52a</xr:TypeId>
-				<xr:ValueId>db6d4d6e-c60f-4222-b401-c1edc6c7491d</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ИсторияРабот" category="RecordKey">
+				<xr:TypeId>cee47399-f4fd-412f-a618-16f5c1b5389a</xr:TypeId>
+				<xr:ValueId>5beceade-4793-418c-9176-76e213d8050a</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.БольничныеПериоды" category="RecordManager">
-				<xr:TypeId>7dd7a191-3ab3-4d51-ab59-c23c5414a644</xr:TypeId>
-				<xr:ValueId>ea34e745-7ebd-4e5e-9b52-d44ef054bbb0</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ИсторияРабот" category="RecordManager">
+				<xr:TypeId>5d1fb8c4-724c-475c-9d58-2616253726f0</xr:TypeId>
+				<xr:ValueId>4adf6bb2-154b-4e9b-bccf-9111a4432c9f</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>БольничныеПериоды</Name>
+			<Name>ИсторияРабот</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Больничные периоды</v8:content>
+					<v8:content>История работ</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -101,63 +101,9 @@
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
-				<xr:StandardAttribute name="Recorder">
-					<xr:LinkByType/>
-					<xr:FillChecking>DontCheck</xr:FillChecking>
-					<xr:MultiLine>false</xr:MultiLine>
-					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
-					<xr:CreateOnInput>Auto</xr:CreateOnInput>
-					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
-					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
-					<xr:ExtendedEdit>false</xr:ExtendedEdit>
-					<xr:Format/>
-					<xr:ChoiceForm/>
-					<xr:QuickChoice>Auto</xr:QuickChoice>
-					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
-					<xr:EditFormat/>
-					<xr:PasswordMode>false</xr:PasswordMode>
-					<xr:DataHistory>Use</xr:DataHistory>
-					<xr:MarkNegatives>false</xr:MarkNegatives>
-					<xr:MinValue xsi:nil="true"/>
-					<xr:Synonym/>
-					<xr:Comment/>
-					<xr:FullTextSearch>Use</xr:FullTextSearch>
-					<xr:ChoiceParameterLinks/>
-					<xr:FillValue xsi:nil="true"/>
-					<xr:Mask/>
-					<xr:ChoiceParameters/>
-				</xr:StandardAttribute>
-				<xr:StandardAttribute name="Period">
-					<xr:LinkByType/>
-					<xr:FillChecking>DontCheck</xr:FillChecking>
-					<xr:MultiLine>false</xr:MultiLine>
-					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
-					<xr:CreateOnInput>Auto</xr:CreateOnInput>
-					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
-					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
-					<xr:ExtendedEdit>false</xr:ExtendedEdit>
-					<xr:Format/>
-					<xr:ChoiceForm/>
-					<xr:QuickChoice>Auto</xr:QuickChoice>
-					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
-					<xr:EditFormat/>
-					<xr:PasswordMode>false</xr:PasswordMode>
-					<xr:DataHistory>Use</xr:DataHistory>
-					<xr:MarkNegatives>false</xr:MarkNegatives>
-					<xr:MinValue xsi:nil="true"/>
-					<xr:Synonym/>
-					<xr:Comment/>
-					<xr:FullTextSearch>Use</xr:FullTextSearch>
-					<xr:ChoiceParameterLinks/>
-					<xr:FillValue xsi:nil="true"/>
-					<xr:Mask/>
-					<xr:ChoiceParameters/>
-				</xr:StandardAttribute>
 			</StandardAttributes>
-			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
-			<WriteMode>RecorderSubordinate</WriteMode>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<DataLockControlMode>Managed</DataLockControlMode>
@@ -174,22 +120,21 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="ae473097-c615-412b-b5b4-1f6f554ffc56">
+			<Attribute uuid="21eac468-c3d0-4616-b5e8-9f334e0b320f">
 				<Properties>
-					<Name>НомерБольничного</Name>
+					<Name>ДатаНачала</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Номер больничного</v8:content>
+							<v8:content>Дата начала</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>50</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -202,7 +147,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
+					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -217,7 +162,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="cc3938e5-f334-412a-92f0-56b1c7261f52">
+			<Attribute uuid="a023a501-9768-4600-81d2-c6a561b775da">
 				<Properties>
 					<Name>ДатаОкончания</Name>
 					<Synonym>
@@ -259,7 +204,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Dimension uuid="d6459354-7a9f-4978-909e-571f74563ec3">
+			<Dimension uuid="8f222d18-1ad4-41b5-a221-3c5b5646d646">
 				<Properties>
 					<Name>Сотрудник</Name>
 					<Synonym>

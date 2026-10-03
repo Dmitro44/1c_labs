@@ -28,15 +28,14 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПричинаОтсутствия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриказКадровый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриемНаРаботу</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КомплектованияСотрудников</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПериодОтпуска</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаСотрудников</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаОтсутствияСотрудников</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаЗамещенияСотрудников</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаСовмещений</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.БольничныеПериоды</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РегистрНакопленияНадбавок</xr:Item>
 			</Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатыРаботников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИсторияРабот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Комплектование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОбразованиеСотрудника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Отпуск</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РаботыСотрудника</xr:Item>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>ПодачаСведений</Subsystem>

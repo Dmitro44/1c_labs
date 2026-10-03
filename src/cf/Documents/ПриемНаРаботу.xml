@@ -61,12 +61,6 @@
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КомплектованияСотрудников</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПериодОтпуска</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаСотрудников</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаОтсутствияСотрудников</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаЗамещенияСотрудников</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрУчетаСовмещений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РегистрНакопленияНадбавок</xr:Item>
 			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>

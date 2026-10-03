@@ -308,14 +308,13 @@
 			<Enum>ВидФинансированияПФО</Enum>
 			<DataProcessor>ЗагрузкаДемоДанных</DataProcessor>
 			<InformationRegister>ШтатныеЕдиницы</InformationRegister>
+			<InformationRegister>ДатыРаботников</InformationRegister>
+			<InformationRegister>ИсторияРабот</InformationRegister>
+			<InformationRegister>Комплектование</InformationRegister>
+			<InformationRegister>ОбразованиеСотрудника</InformationRegister>
+			<InformationRegister>Отпуск</InformationRegister>
+			<InformationRegister>РаботыСотрудника</InformationRegister>
 			<InformationRegister>РегистрРаботыСоШтатнымРасписанием</InformationRegister>
-			<InformationRegister>БольничныеПериоды</InformationRegister>
-			<InformationRegister>КомплектованияСотрудников</InformationRegister>
-			<InformationRegister>ПериодОтпуска</InformationRegister>
-			<InformationRegister>РегистрУчетаСотрудников</InformationRegister>
-			<InformationRegister>РегистрУчетаОтсутствияСотрудников</InformationRegister>
-			<InformationRegister>РегистрУчетаЗамещенияСотрудников</InformationRegister>
-			<InformationRegister>РегистрУчетаСовмещений</InformationRegister>
 			<AccumulationRegister>РегистрНакопленияНадбавок</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>

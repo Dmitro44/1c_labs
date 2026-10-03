@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<InformationRegister uuid="6caf25d0-0e49-448e-abe2-a89ea02f924b">
+	<InformationRegister uuid="373b6b09-c1f4-4d9d-a128-276421f6932b">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.ПериодОтпуска" category="Record">
-				<xr:TypeId>b11a0596-7c0b-485f-a6b2-b2d2563d5fc9</xr:TypeId>
-				<xr:ValueId>9e06f889-7ead-4e6e-b50e-c119c7f86b2f</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.Комплектование" category="Record">
+				<xr:TypeId>16bd39e2-b8ca-4252-a499-d5de8f24cc54</xr:TypeId>
+				<xr:ValueId>d531f262-fddb-40fe-880b-29be680df55b</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.ПериодОтпуска" category="Manager">
-				<xr:TypeId>31f65d3b-347e-42fd-be75-b70746b045ee</xr:TypeId>
-				<xr:ValueId>f7ad1e22-ee91-4c44-ae4d-b4483614742a</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.Комплектование" category="Manager">
+				<xr:TypeId>9003cb83-7b10-4fbc-8a24-5b2fe4600ff5</xr:TypeId>
+				<xr:ValueId>b8a7dabb-aabe-41de-8fb7-3f1faf632640</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.ПериодОтпуска" category="Selection">
-				<xr:TypeId>596336a7-4c8b-4b1f-8dc8-d8d636fdf170</xr:TypeId>
-				<xr:ValueId>782f491a-77db-4674-a486-3805f986eab1</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.Комплектование" category="Selection">
+				<xr:TypeId>c0ce8259-cc5e-4845-8636-6fc3a4374561</xr:TypeId>
+				<xr:ValueId>b19b42cf-e526-43d5-bd69-1e18e1f12013</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.ПериодОтпуска" category="List">
-				<xr:TypeId>f4551003-7472-4930-9369-9509ec83f60d</xr:TypeId>
-				<xr:ValueId>17f77dc4-d258-43d2-adb8-81317d81f022</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.Комплектование" category="List">
+				<xr:TypeId>9a8e89f2-9c09-47d1-aeac-dd33ebc09a44</xr:TypeId>
+				<xr:ValueId>b783ce1a-f805-42db-ab71-9e0b2cc3721f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.ПериодОтпуска" category="RecordSet">
-				<xr:TypeId>8e891d39-e1d5-4159-8e77-1b5104001aa9</xr:TypeId>
-				<xr:ValueId>f7e2589c-752b-4c89-ab38-3a4e8f6bf189</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.Комплектование" category="RecordSet">
+				<xr:TypeId>48213acf-c8e7-4313-9808-ceb94427d731</xr:TypeId>
+				<xr:ValueId>6effa319-4521-4abd-b70d-18bfc9e49d8e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.ПериодОтпуска" category="RecordKey">
-				<xr:TypeId>910d8a64-e9dd-45a5-a046-9a45a8129ac8</xr:TypeId>
-				<xr:ValueId>7898f0b8-2f51-45f9-b0f5-0d15b70362e5</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.Комплектование" category="RecordKey">
+				<xr:TypeId>ceebbfd3-8ae3-4b93-abd7-0fce33238448</xr:TypeId>
+				<xr:ValueId>0217db02-65e8-44b1-aae0-fe76d02e6363</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.ПериодОтпуска" category="RecordManager">
-				<xr:TypeId>77e94ba5-9fc1-40d1-9107-78b8cf5a48ec</xr:TypeId>
-				<xr:ValueId>d3543ed9-0d0d-4239-9371-e746ed1c7c58</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.Комплектование" category="RecordManager">
+				<xr:TypeId>75b3c856-3c85-41a2-9f05-72e9b80faa21</xr:TypeId>
+				<xr:ValueId>6b9fc6fa-e3a8-4994-a7d2-93bffb6c10a9</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ПериодОтпуска</Name>
+			<Name>Комплектование</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Период отпуска</v8:content>
+					<v8:content>Комплектование</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -101,63 +101,9 @@
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
-				<xr:StandardAttribute name="Recorder">
-					<xr:LinkByType/>
-					<xr:FillChecking>DontCheck</xr:FillChecking>
-					<xr:MultiLine>false</xr:MultiLine>
-					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
-					<xr:CreateOnInput>Auto</xr:CreateOnInput>
-					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
-					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
-					<xr:ExtendedEdit>false</xr:ExtendedEdit>
-					<xr:Format/>
-					<xr:ChoiceForm/>
-					<xr:QuickChoice>Auto</xr:QuickChoice>
-					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
-					<xr:EditFormat/>
-					<xr:PasswordMode>false</xr:PasswordMode>
-					<xr:DataHistory>Use</xr:DataHistory>
-					<xr:MarkNegatives>false</xr:MarkNegatives>
-					<xr:MinValue xsi:nil="true"/>
-					<xr:Synonym/>
-					<xr:Comment/>
-					<xr:FullTextSearch>Use</xr:FullTextSearch>
-					<xr:ChoiceParameterLinks/>
-					<xr:FillValue xsi:nil="true"/>
-					<xr:Mask/>
-					<xr:ChoiceParameters/>
-				</xr:StandardAttribute>
-				<xr:StandardAttribute name="Period">
-					<xr:LinkByType/>
-					<xr:FillChecking>DontCheck</xr:FillChecking>
-					<xr:MultiLine>false</xr:MultiLine>
-					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
-					<xr:CreateOnInput>Auto</xr:CreateOnInput>
-					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
-					<xr:MaxValue xsi:nil="true"/>
-					<xr:ToolTip/>
-					<xr:ExtendedEdit>false</xr:ExtendedEdit>
-					<xr:Format/>
-					<xr:ChoiceForm/>
-					<xr:QuickChoice>Auto</xr:QuickChoice>
-					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
-					<xr:EditFormat/>
-					<xr:PasswordMode>false</xr:PasswordMode>
-					<xr:DataHistory>Use</xr:DataHistory>
-					<xr:MarkNegatives>false</xr:MarkNegatives>
-					<xr:MinValue xsi:nil="true"/>
-					<xr:Synonym/>
-					<xr:Comment/>
-					<xr:FullTextSearch>Use</xr:FullTextSearch>
-					<xr:ChoiceParameterLinks/>
-					<xr:FillValue xsi:nil="true"/>
-					<xr:Mask/>
-					<xr:ChoiceParameters/>
-				</xr:StandardAttribute>
 			</StandardAttributes>
-			<InformationRegisterPeriodicity>Second</InformationRegisterPeriodicity>
-			<WriteMode>RecorderSubordinate</WriteMode>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<DataLockControlMode>Managed</DataLockControlMode>
@@ -174,7 +120,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="8c5785c4-380f-4cb9-a722-104607e539e7">
+			<Attribute uuid="6d69b000-d5cc-4eac-933e-986503b04484">
 				<Properties>
 					<Name>ДатаНачала</Name>
 					<Synonym>
@@ -216,7 +162,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="ea318da3-ea0c-409f-bc0d-551c2ded5694">
+			<Attribute uuid="89de97e2-fe69-404f-b581-a482dce7913b">
 				<Properties>
 					<Name>ДатаОкончания</Name>
 					<Synonym>
@@ -258,7 +204,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Dimension uuid="d680d978-2cbe-4990-bb6e-2dd7192432e8">
+			<Dimension uuid="902902e6-0647-4e9f-ad29-3105e6fc6528">
 				<Properties>
 					<Name>Сотрудник</Name>
 					<Synonym>
