@@ -1,0 +1,33 @@
+{
+  "title": "Тарифные оклады",
+  "properties": { "autoTitle": false },
+  "events": { "OnCreateAtServer": "ПриСозданииНаСервере" },
+  "elements": [
+    { "autoCmdBar": "ФормаКоманднаяПанель", "children": [
+      { "button": "Сформировать", "command": "Сформировать", "defaultButton": true }
+    ]},
+    { "group": "alwaysHorizontal", "name": "ГруппаПараметры", "children": [
+      { "group": "vertical", "name": "ГруппаФильтры", "united": true, "children": [
+        { "input": "Дата", "path": "Дата", "width": 14 },
+        { "input": "ВидыФинансирования", "path": "ВидыФинансирования", "title": "Вид финансирования" },
+        { "input": "Должности", "path": "Должности" }
+      ]},
+      { "group": "vertical", "name": "ГруппаПоказатели", "united": true, "children": [
+        { "input": "БазоваяВеличина", "path": "БазоваяВеличина", "title": "Базовая величина", "width": 10 },
+        { "input": "СтавкаПервогоРазряда", "path": "СтавкаПервогоРазряда", "title": "Тарифная ставка 1-го разряда", "width": 10 }
+      ]}
+    ]},
+    { "spreadsheet": "Результат", "path": "Результат", "titleLocation": "none", "readOnly": true, "output": "Disable", "protection": true }
+  ],
+  "attributes": [
+    { "name": "Дата", "type": "date" },
+    { "name": "ВидыФинансирования", "type": "ValueList(EnumRef.ИсточникФинансирования)" },
+    { "name": "Должности", "type": "ValueList(CatalogRef.Должности)" },
+    { "name": "БазоваяВеличина", "type": "Number(10,2)" },
+    { "name": "СтавкаПервогоРазряда", "type": "Number(10,2)" },
+    { "name": "Результат", "type": "mxl:SpreadsheetDocument" }
+  ],
+  "commands": [
+    { "name": "Сформировать", "title": "Сформировать", "action": "Сформировать" }
+  ]
+}

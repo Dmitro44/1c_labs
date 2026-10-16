@@ -39,6 +39,7 @@
 		</Properties>
 		<ChildObjects>
 			<Subsystem>ПодачаСведений</Subsystem>
+			<Subsystem>Отчеты</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

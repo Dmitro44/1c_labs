@@ -1,0 +1,43 @@
+{
+  "title": "Работающие сотрудники",
+  "properties": { "autoTitle": false },
+  "events": { "OnCreateAtServer": "ПриСозданииНаСервере" },
+  "elements": [
+    { "autoCmdBar": "ФормаКоманднаяПанель", "children": [
+      { "button": "Сформировать", "command": "Сформировать", "defaultButton": true }
+    ]},
+    { "group": "vertical", "name": "ГруппаФильтры", "united": true, "children": [
+      { "group": "alwaysHorizontal", "name": "ГруппаПериод", "united": true, "children": [
+        { "input": "ДатаНачала", "path": "ДатаНачала", "title": "Период с", "width": 14 },
+        { "input": "ДатаОкончания", "path": "ДатаОкончания", "title": "по", "width": 14 }
+      ]},
+      { "input": "ВидыРаботы", "path": "ВидыРаботы", "title": "Виды работ" },
+      { "input": "ВидыФинансирования", "path": "ВидыФинансирования", "title": "Виды финансирования" },
+      { "input": "Подразделения", "path": "Подразделения", "title": "Подразделение" },
+      { "input": "Должности", "path": "Должности", "title": "Должность" },
+      { "input": "Пол", "path": "Пол" },
+      { "input": "ВидДоговора", "path": "ВидДоговора", "title": "Вид договора" },
+      { "input": "ВидОтображения", "path": "ВидОтображения", "title": "Выводить отчет", "choiceList": [
+        { "value": "Списком" },
+        { "value": "По подразделениям" },
+        { "value": "По виду персонала" }
+      ]}
+    ]},
+    { "spreadsheet": "Результат", "path": "Результат", "titleLocation": "none", "readOnly": true, "output": "Disable", "protection": true }
+  ],
+  "attributes": [
+    { "name": "ДатаНачала", "type": "date" },
+    { "name": "ДатаОкончания", "type": "date" },
+    { "name": "ВидыРаботы", "type": "ValueList(EnumRef.ВидРаботы)" },
+    { "name": "ВидыФинансирования", "type": "ValueList(EnumRef.ИсточникФинансирования)" },
+    { "name": "Подразделения", "type": "ValueList(CatalogRef.Подразделения)" },
+    { "name": "Должности", "type": "ValueList(CatalogRef.Должности)" },
+    { "name": "Пол", "type": "EnumRef.Пол" },
+    { "name": "ВидДоговора", "type": "EnumRef.ВидКомплектования" },
+    { "name": "ВидОтображения", "type": "string(50)" },
+    { "name": "Результат", "type": "mxl:SpreadsheetDocument" }
+  ],
+  "commands": [
+    { "name": "Сформировать", "title": "Сформировать", "action": "Сформировать" }
+  ]
+}

@@ -12,7 +12,7 @@ fi
 
 mkdir -p /tmp/1c_ss
 if [[ ! -f /tmp/1c_ss/config.yml ]]; then
-  "$V8PATH/ibcmd" server config init --address=localhost --port=8314 --base=/labs --name=labs --db-path="$DBPATH" --config=/tmp/1c_ss/config.yml
+  "$V8PATH/ibcmd" server config init --address=localhost --port=8314 --base=/labs --name=labs --db-path="$DBPATH" > /tmp/1c_ss/config.yml
 fi
 
 pkill -9 -f ibsrv 2>/dev/null || true

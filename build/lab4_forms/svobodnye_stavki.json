@@ -1,0 +1,27 @@
+{
+  "title": "Свободные ставки",
+  "properties": { "autoTitle": false },
+  "events": { "OnCreateAtServer": "ПриСозданииНаСервере" },
+  "elements": [
+    { "autoCmdBar": "ФормаКоманднаяПанель", "children": [
+      { "button": "Сформировать", "command": "Сформировать", "defaultButton": true }
+    ]},
+    { "group": "vertical", "name": "ГруппаФильтры", "united": true, "children": [
+      { "input": "Дата", "path": "Дата", "width": 14 },
+      { "input": "ВидыФинансирования", "path": "ВидыФинансирования", "title": "Вид финансирования" },
+      { "input": "Подразделения", "path": "Подразделения" },
+      { "input": "Должности", "path": "Должности" }
+    ]},
+    { "spreadsheet": "Результат", "path": "Результат", "titleLocation": "none", "readOnly": true, "output": "Disable", "protection": true }
+  ],
+  "attributes": [
+    { "name": "Дата", "type": "date" },
+    { "name": "ВидыФинансирования", "type": "ValueList(EnumRef.ИсточникФинансирования)" },
+    { "name": "Подразделения", "type": "ValueList(CatalogRef.Подразделения)" },
+    { "name": "Должности", "type": "ValueList(CatalogRef.Должности)" },
+    { "name": "Результат", "type": "mxl:SpreadsheetDocument" }
+  ],
+  "commands": [
+    { "name": "Сформировать", "title": "Сформировать", "action": "Сформировать" }
+  ]
+}

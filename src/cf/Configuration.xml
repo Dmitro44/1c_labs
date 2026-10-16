@@ -308,6 +308,9 @@
 			<Enum>ВидДоплатыЗаСовмещение</Enum>
 			<Enum>ВидФинансированияПФО</Enum>
 			<DataProcessor>ЗагрузкаДемоДанных</DataProcessor>
+			<Report>ТарифныеОклады</Report>
+			<Report>СвободныеСтавки</Report>
+			<Report>РаботающиеСотрудники</Report>
 			<InformationRegister>ШтатныеЕдиницы</InformationRegister>
 			<InformationRegister>ДатыРаботников</InformationRegister>
 			<InformationRegister>ИсторияРабот</InformationRegister>
