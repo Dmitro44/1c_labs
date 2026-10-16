@@ -1,0 +1,29 @@
+{
+  "title": "Регистр работы со штатным расписанием",
+  "elements": [
+    {
+      "table": "Список",
+      "path": "Список",
+      "representation": "List",
+      "columns": [
+        { "input": "Период", "path": "Список.Period", "width": 14, "autoMaxWidth": false },
+        { "input": "Регистратор", "path": "Список.Recorder" },
+        { "input": "Подразделения", "path": "Список.Подразделения", "title": "Подразделение" },
+        { "input": "Должности", "path": "Список.Должности" },
+        { "input": "ВидФинансирования", "path": "Список.ВидФинансирования", "title": "Вид финансирования" },
+        { "input": "Ставка", "path": "Список.Ставка", "format": "ЧДЦ=3" }
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "name": "Список",
+      "type": "DynamicList",
+      "main": true,
+      "settings": {
+        "mainTable": "AccumulationRegister.РегистрРаботыСоШтатнымРасписанием",
+        "autoSaveUserSettings": true
+      }
+    }
+  ]
+}

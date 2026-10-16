@@ -266,6 +266,7 @@
 			<Language>Русский</Language>
 			<Subsystem>КадровыйУчет</Subsystem>
 			<Subsystem>Классификаторы</Subsystem>
+			<Subsystem>Регистры</Subsystem>
 			<Subsystem>ПЭУ</Subsystem>
 			<CommonModule>ДемоДанныеСервер</CommonModule>
 			<HTTPService>ЗагрузкаДанных</HTTPService>
@@ -314,8 +315,9 @@
 			<InformationRegister>ОбразованиеСотрудника</InformationRegister>
 			<InformationRegister>Отпуск</InformationRegister>
 			<InformationRegister>РаботыСотрудника</InformationRegister>
-			<InformationRegister>РегистрРаботыСоШтатнымРасписанием</InformationRegister>
 			<AccumulationRegister>РегистрНакопленияНадбавок</AccumulationRegister>
+			<AccumulationRegister>РегистрУчетаСотрудников</AccumulationRegister>
+			<AccumulationRegister>РегистрРаботыСоШтатнымРасписанием</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

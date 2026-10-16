@@ -22,7 +22,6 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ШтатныеЕдиницы</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрРаботыСоШтатнымРасписанием</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
