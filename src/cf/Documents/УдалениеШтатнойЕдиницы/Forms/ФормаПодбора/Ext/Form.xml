@@ -187,7 +187,7 @@
 				</Column>
 				<Column name="Финансирование" id="52">
 					<Type>
-						<v8:Type>cfg:EnumRef.ИсточникФинансирования</v8:Type>
+						<v8:Type>cfg:CatalogRef.ВидыФинансирования</v8:Type>
 					</Type>
 				</Column>
 				<Column name="Подразделение" id="53">
@@ -262,7 +262,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:EnumRef.ИсточникФинансирования</v8:Type>
+				<v8:Type>cfg:CatalogRef.ВидыФинансирования</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ДатаОстатков" id="63">

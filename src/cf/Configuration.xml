@@ -287,6 +287,7 @@
 			<Catalog>ТипУлицы</Catalog>
 			<Catalog>БанкиРБ</Catalog>
 			<Catalog>ПричинаОтсутствия</Catalog>
+			<Catalog>ВидыФинансирования</Catalog>
 			<Document>ПриказКадровый</Document>
 			<Document>ВводШтатнойЕдиницы</Document>
 			<Document>УдалениеШтатнойЕдиницы</Document>

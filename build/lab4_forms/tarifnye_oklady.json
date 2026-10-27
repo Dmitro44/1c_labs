@@ -21,7 +21,7 @@
   ],
   "attributes": [
     { "name": "Дата", "type": "date" },
-    { "name": "ВидыФинансирования", "type": "ValueList(EnumRef.ИсточникФинансирования)" },
+    { "name": "ВидыФинансирования", "type": "ValueList(CatalogRef.ВидыФинансирования)" },
     { "name": "Должности", "type": "ValueList(CatalogRef.Должности)" },
     { "name": "БазоваяВеличина", "type": "Number(10,2)" },
     { "name": "СтавкаПервогоРазряда", "type": "Number(10,2)" },

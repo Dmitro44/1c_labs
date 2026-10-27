@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="ec731055-2b27-4142-aa6c-e1ad798fbccc">
+		<Name>Бюджет</Name>
+		<Code/>
+		<Description>Бюджет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="aecd5383-55e6-4320-92b2-9574ba04368a">
+		<Name>Внебюджет</Name>
+		<Code/>
+		<Description>Внебюджет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

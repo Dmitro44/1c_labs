@@ -89,7 +89,7 @@
 			<Type>
 				<v8:Type>v8:ValueList</v8:Type>
 				<v8:ValueTypeInfo>
-					<v8:Type>cfg:EnumRef.ИсточникФинансирования</v8:Type>
+					<v8:Type>cfg:CatalogRef.ВидыФинансирования</v8:Type>
 				</v8:ValueTypeInfo>
 			</Type>
 		</Attribute>
