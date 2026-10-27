@@ -27,19 +27,20 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Надбавки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПричинаОтсутствия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриказКадровый</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриемНаРаботу</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РегистрНакопленияНадбавок</xr:Item>
-			</Content>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатыРаботников</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИсторияРабот</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Комплектование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОбразованиеСотрудника</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Отпуск</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РаботыСотрудника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.БазоваяСтавка</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>ПодачаСведений</Subsystem>
 			<Subsystem>Отчеты</Subsystem>
+			<Subsystem>КадровыеДвижения</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

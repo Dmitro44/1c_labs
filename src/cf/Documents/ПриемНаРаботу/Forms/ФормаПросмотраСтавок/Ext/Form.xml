@@ -172,5 +172,13 @@
 				<v8:Type>cfg:CatalogRef.Должности</v8:Type>
 			</Type>
 		</Parameter>
+		<Parameter name="ДатаОстатков">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Parameter>
 	</Parameters>
 </Form>

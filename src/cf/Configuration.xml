@@ -270,6 +270,7 @@
 			<Subsystem>ПЭУ</Subsystem>
 			<CommonModule>ДемоДанныеСервер</CommonModule>
 			<HTTPService>ЗагрузкаДанных</HTTPService>
+			<Constant>БазоваяСтавка</Constant>
 			<Catalog>Надбавки</Catalog>
 			<Catalog>Подразделения</Catalog>
 			<Catalog>Должности</Catalog>
@@ -320,6 +321,7 @@
 			<InformationRegister>РаботыСотрудника</InformationRegister>
 			<AccumulationRegister>РегистрНакопленияНадбавок</AccumulationRegister>
 			<AccumulationRegister>РегистрУчетаСотрудников</AccumulationRegister>
+			<AccumulationRegister>РегистрУчетаСовмещений</AccumulationRegister>
 			<AccumulationRegister>РегистрРаботыСоШтатнымРасписанием</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>

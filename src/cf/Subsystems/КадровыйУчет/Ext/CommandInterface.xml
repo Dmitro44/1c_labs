@@ -1,12 +1,58 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandsVisibility>
+		<Command name="InformationRegister.ДатыРаботников.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ИсторияРабот.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.Комплектование.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ОбразованиеСотрудника.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.Отпуск.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.РаботыСотрудника.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
 	<CommandsOrder>
-	<Command name="Catalog.Надбавки.StandardCommand.OpenList"><CommandGroup>NavigationPanelOrdinary</CommandGroup></Command>
-	<Command name="Catalog.Подразделения.StandardCommand.OpenList"><CommandGroup>NavigationPanelOrdinary</CommandGroup></Command>
-	<Command name="Catalog.Должности.StandardCommand.OpenList"><CommandGroup>NavigationPanelOrdinary</CommandGroup></Command>
-	<Command name="Catalog.Сотрудники.StandardCommand.OpenList"><CommandGroup>NavigationPanelOrdinary</CommandGroup></Command>
-	<Command name="Document.ПриказКадровый.StandardCommand.OpenList"><CommandGroup>NavigationPanelOrdinary</CommandGroup></Command>
-	<Command name="Document.ПриемНаРаботу.StandardCommand.OpenList"><CommandGroup>NavigationPanelOrdinary</CommandGroup></Command>
-	<Command name="Document.Больничные.StandardCommand.OpenList"><CommandGroup>NavigationPanelOrdinary</CommandGroup></Command>
-</CommandsOrder>
+		<Command name="Catalog.Надбавки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Подразделения.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Должности.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Сотрудники.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПриказКадровый.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Больничные.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.КадровыйУчет.Subsystem.КадровыеДвижения</Subsystem>
+	</SubsystemsOrder>
 </CommandInterface>

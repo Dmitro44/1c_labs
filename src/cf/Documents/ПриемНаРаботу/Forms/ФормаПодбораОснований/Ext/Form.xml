@@ -54,16 +54,29 @@
 				<ExtendedTooltip name="ОснованияУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<InputField name="Причина" id="16">
-					<DataPath>Основания.Причина</DataPath>
+				<CheckBoxField name="Выбрано" id="22">
+					<DataPath>Основания.Выбрано</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Причина отсутствия</v8:content>
+							<v8:content>Выбрано</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="ПричинаКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ПричинаРасширеннаяПодсказка" id="18"/>
+					<CheckBoxType>Auto</CheckBoxType>
+					<TitleLocation>Right</TitleLocation>
+					<ContextMenu name="ВыбраноКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ВыбраноРасширеннаяПодсказка" id="24"/>
+				</CheckBoxField>
+				<InputField name="Основание" id="16">
+					<DataPath>Основания.Основание</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основание</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОснованиеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="18"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -80,7 +93,12 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="Причина" id="20">
+				<Column name="Выбрано" id="25">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Основание" id="20">
 					<Type>
 						<v8:Type>cfg:CatalogRef.ПричинаОтсутствия</v8:Type>
 					</Type>
