@@ -15,57 +15,94 @@
 				<DefaultButton>true</DefaultButton>
 				<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="2"/>
 			</Button>
+			<Button name="ВыбратьВариант" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыбратьВариант</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выбрать вариант…</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ВыбратьВариантРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Button name="Настройки" id="5">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Настройки</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Настройки…</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="6"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаФильтры" id="3">
+		<UsualGroup name="ГруппаФильтры" id="7">
 			<Group>Vertical</Group>
-			<ExtendedTooltip name="ГруппаФильтрыРасширеннаяПодсказка" id="4"/>
+			<ExtendedTooltip name="ГруппаФильтрыРасширеннаяПодсказка" id="8"/>
 			<ChildItems>
-				<InputField name="Дата" id="5">
+				<InputField name="Дата" id="9">
 					<DataPath>Дата</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</EditFormat>
 					<Width>14</Width>
-					<ContextMenu name="ДатаКонтекстноеМеню" id="6"/>
-					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="7"/>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="11"/>
 				</InputField>
-				<InputField name="ВидыФинансирования" id="8">
+				<InputField name="Подразделения" id="12">
+					<DataPath>Подразделения</DataPath>
+					<Width>30</Width>
+					<ContextMenu name="ПодразделенияКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ПодразделенияРасширеннаяПодсказка" id="14"/>
+				</InputField>
+				<InputField name="Должности" id="15">
+					<DataPath>Должности</DataPath>
+					<Width>40</Width>
+					<ContextMenu name="ДолжностиКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ДолжностиРасширеннаяПодсказка" id="17"/>
+				</InputField>
+				<InputField name="ВидыФинансирования" id="18">
 					<DataPath>ВидыФинансирования</DataPath>
+					<Width>30</Width>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Вид финансирования</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="ВидыФинансированияКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="ВидыФинансированияРасширеннаяПодсказка" id="10"/>
-				</InputField>
-				<InputField name="Подразделения" id="11">
-					<DataPath>Подразделения</DataPath>
-					<ContextMenu name="ПодразделенияКонтекстноеМеню" id="12"/>
-					<ExtendedTooltip name="ПодразделенияРасширеннаяПодсказка" id="13"/>
-				</InputField>
-				<InputField name="Должности" id="14">
-					<DataPath>Должности</DataPath>
-					<ContextMenu name="ДолжностиКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ДолжностиРасширеннаяПодсказка" id="16"/>
+					<ContextMenu name="ВидыФинансированияКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ВидыФинансированияРасширеннаяПодсказка" id="20"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<SpreadSheetDocumentField name="Результат" id="17">
+		<SpreadSheetDocumentField name="Результат" id="21">
 			<DataPath>Результат</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>None</TitleLocation>
 			<Output>Disable</Output>
 			<Protection>true</Protection>
-			<ContextMenu name="РезультатКонтекстноеМеню" id="18"/>
-			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="19"/>
+			<ContextMenu name="РезультатКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="23"/>
 		</SpreadSheetDocumentField>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="Дата" id="20">
+		<Attribute name="Дата" id="24">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -79,7 +116,7 @@
 				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ВидыФинансирования" id="21">
+		<Attribute name="ВидыФинансирования" id="25">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -87,13 +124,13 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>v8:ValueList</v8:Type>
-				<v8:ValueTypeInfo>
-					<v8:Type>cfg:CatalogRef.ВидыФинансирования</v8:Type>
-				</v8:ValueTypeInfo>
+				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.ВидыФинансирования</v8:Type>
+			</Settings>
 		</Attribute>
-		<Attribute name="Подразделения" id="22">
+		<Attribute name="Подразделения" id="26">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -101,13 +138,13 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>v8:ValueList</v8:Type>
-				<v8:ValueTypeInfo>
-					<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
-				</v8:ValueTypeInfo>
+				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Settings>
 		</Attribute>
-		<Attribute name="Должности" id="23">
+		<Attribute name="Должности" id="27">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -115,13 +152,13 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>v8:ValueList</v8:Type>
-				<v8:ValueTypeInfo>
-					<v8:Type>cfg:CatalogRef.Должности</v8:Type>
-				</v8:ValueTypeInfo>
+				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Должности</v8:Type>
+			</Settings>
 		</Attribute>
-		<Attribute name="Результат" id="24">
+		<Attribute name="Результат" id="28">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -134,7 +171,7 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Сформировать" id="25">
+		<Command name="Сформировать" id="29">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -142,6 +179,24 @@
 				</v8:item>
 			</Title>
 			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ВыбратьВариант" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать вариант…</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыбратьВариант</Action>
+		</Command>
+		<Command name="Настройки" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки…</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Настройки</Action>
 		</Command>
 	</Commands>
 </Form>

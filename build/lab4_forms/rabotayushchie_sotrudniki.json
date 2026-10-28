@@ -4,24 +4,25 @@
   "events": { "OnCreateAtServer": "ПриСозданииНаСервере" },
   "elements": [
     { "autoCmdBar": "ФормаКоманднаяПанель", "children": [
-      { "button": "Сформировать", "command": "Сформировать", "defaultButton": true }
+      { "button": "Сформировать", "command": "Сформировать", "defaultButton": true },
+      { "button": "Проверить", "command": "Проверить", "title": "Проверить" }
     ]},
     { "group": "vertical", "name": "ГруппаФильтры", "united": true, "children": [
       { "group": "alwaysHorizontal", "name": "ГруппаПериод", "united": true, "children": [
-        { "input": "ДатаНачала", "path": "ДатаНачала", "title": "Период с", "width": 14 },
-        { "input": "ДатаОкончания", "path": "ДатаОкончания", "title": "по", "width": 14 }
+        { "input": "ДатаНачала", "path": "ДатаНачала", "title": "Период:", "width": 14 },
+        { "input": "ДатаОкончания", "path": "ДатаОкончания", "title": "", "width": 14 }
       ]},
       { "input": "ВидыРаботы", "path": "ВидыРаботы", "title": "Виды работ" },
       { "input": "ВидыФинансирования", "path": "ВидыФинансирования", "title": "Виды финансирования" },
       { "input": "Подразделения", "path": "Подразделения", "title": "Подразделение" },
       { "input": "Должности", "path": "Должности", "title": "Должность" },
       { "input": "Пол", "path": "Пол" },
-      { "input": "ВидДоговора", "path": "ВидДоговора", "title": "Вид договора" },
-      { "input": "ВидОтображения", "path": "ВидОтображения", "title": "Выводить отчет", "choiceList": [
-        { "value": "Списком" },
-        { "value": "По подразделениям" },
-        { "value": "По виду персонала" }
-      ]}
+      { "input": "ВидДоговора", "path": "ВидДоговора", "title": "Вид договора" }
+    ]},
+    { "radio": "ВидОтображения", "path": "ВидОтображения", "title": "Выводить отчет", "columnsCount": 1, "choiceList": [
+      { "value": "Списком" },
+      { "value": "По подразделениям" },
+      { "value": "По виду персонала" }
     ]},
     { "spreadsheet": "Результат", "path": "Результат", "titleLocation": "none", "readOnly": true, "output": "Disable", "protection": true }
   ],
@@ -38,6 +39,7 @@
     { "name": "Результат", "type": "mxl:SpreadsheetDocument" }
   ],
   "commands": [
-    { "name": "Сформировать", "title": "Сформировать", "action": "Сформировать" }
+    { "name": "Сформировать", "title": "Сформировать", "action": "Сформировать" },
+    { "name": "Проверить", "title": "Проверить", "action": "Проверить" }
   ]
 }

@@ -35,6 +35,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Отпуск</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РаботыСотрудника</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.БазоваяСтавка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДемоДанных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

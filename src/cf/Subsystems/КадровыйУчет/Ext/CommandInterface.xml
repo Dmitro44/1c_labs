@@ -33,6 +33,9 @@
 		</Command>
 	</CommandsVisibility>
 	<CommandsOrder>
+		<Command name="DataProcessor.ЗагрузкаДемоДанных.StandardCommand.Open">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
 		<Command name="Catalog.Надбавки.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>

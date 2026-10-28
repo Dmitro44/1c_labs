@@ -4,13 +4,15 @@
   "events": { "OnCreateAtServer": "ПриСозданииНаСервере" },
   "elements": [
     { "autoCmdBar": "ФормаКоманднаяПанель", "children": [
-      { "button": "Сформировать", "command": "Сформировать", "defaultButton": true }
+      { "button": "Сформировать", "command": "Сформировать", "defaultButton": true },
+      { "button": "ВыбратьВариант", "command": "ВыбратьВариант", "title": "Выбрать вариант…" },
+      { "button": "Настройки", "command": "Настройки", "title": "Настройки…" }
     ]},
     { "group": "vertical", "name": "ГруппаФильтры", "united": true, "children": [
       { "input": "Дата", "path": "Дата", "width": 14 },
-      { "input": "ВидыФинансирования", "path": "ВидыФинансирования", "title": "Вид финансирования" },
       { "input": "Подразделения", "path": "Подразделения" },
-      { "input": "Должности", "path": "Должности" }
+      { "input": "Должности", "path": "Должности" },
+      { "input": "ВидыФинансирования", "path": "ВидыФинансирования", "title": "Вид финансирования" }
     ]},
     { "spreadsheet": "Результат", "path": "Результат", "titleLocation": "none", "readOnly": true, "output": "Disable", "protection": true }
   ],
@@ -22,6 +24,8 @@
     { "name": "Результат", "type": "mxl:SpreadsheetDocument" }
   ],
   "commands": [
-    { "name": "Сформировать", "title": "Сформировать", "action": "Сформировать" }
+    { "name": "Сформировать", "title": "Сформировать", "action": "Сформировать" },
+    { "name": "ВыбратьВариант", "title": "Выбрать вариант…", "action": "ВыбратьВариант" },
+    { "name": "Настройки", "title": "Настройки…", "action": "Настройки" }
   ]
 }

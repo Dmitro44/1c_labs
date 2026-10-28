@@ -4,18 +4,14 @@
   "events": { "OnCreateAtServer": "ПриСозданииНаСервере" },
   "elements": [
     { "autoCmdBar": "ФормаКоманднаяПанель", "children": [
-      { "button": "Сформировать", "command": "Сформировать", "defaultButton": true }
+      { "button": "Сформировать", "command": "Сформировать", "title": "Сформировать…", "defaultButton": true },
+      { "button": "ВыбратьВариант", "command": "ВыбратьВариант", "title": "Выбрать вариант…" },
+      { "button": "Настройки", "command": "Настройки", "title": "Настройки…" }
     ]},
-    { "group": "alwaysHorizontal", "name": "ГруппаПараметры", "children": [
-      { "group": "vertical", "name": "ГруппаФильтры", "united": true, "children": [
-        { "input": "Дата", "path": "Дата", "width": 14 },
-        { "input": "ВидыФинансирования", "path": "ВидыФинансирования", "title": "Вид финансирования" },
-        { "input": "Должности", "path": "Должности" }
-      ]},
-      { "group": "vertical", "name": "ГруппаПоказатели", "united": true, "children": [
-        { "input": "БазоваяВеличина", "path": "БазоваяВеличина", "title": "Базовая величина", "width": 10 },
-        { "input": "СтавкаПервогоРазряда", "path": "СтавкаПервогоРазряда", "title": "Тарифная ставка 1-го разряда", "width": 10 }
-      ]}
+    { "group": "vertical", "name": "ГруппаФильтры", "united": true, "children": [
+      { "input": "Дата", "path": "Дата", "width": 14 },
+      { "input": "ВидыФинансирования", "path": "ВидыФинансирования", "title": "Вид финансирования" },
+      { "input": "Должности", "path": "Должности" }
     ]},
     { "spreadsheet": "Результат", "path": "Результат", "titleLocation": "none", "readOnly": true, "output": "Disable", "protection": true }
   ],
@@ -28,6 +24,8 @@
     { "name": "Результат", "type": "mxl:SpreadsheetDocument" }
   ],
   "commands": [
-    { "name": "Сформировать", "title": "Сформировать", "action": "Сформировать" }
+    { "name": "Сформировать", "title": "Сформировать…", "action": "Сформировать" },
+    { "name": "ВыбратьВариант", "title": "Выбрать вариант…", "action": "ВыбратьВариант" },
+    { "name": "Настройки", "title": "Настройки…", "action": "Настройки" }
   ]
 }
