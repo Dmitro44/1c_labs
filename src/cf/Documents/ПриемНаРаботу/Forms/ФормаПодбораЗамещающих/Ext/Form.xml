@@ -108,6 +108,17 @@
 					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="24"/>
 				</InputField>
+				<InputField name="Должность" id="63">
+					<DataPath>Отсутствующие.Должность</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="65"/>
+				</InputField>
 				<InputField name="Ставка" id="51">
 					<DataPath>Отсутствующие.Ставка</DataPath>
 					<Format>
@@ -118,17 +129,6 @@
 					</Format>
 					<ContextMenu name="СтавкаКонтекстноеМеню" id="52"/>
 					<ExtendedTooltip name="СтавкаРасширеннаяПодсказка" id="53"/>
-				</InputField>
-				<InputField name="Доплата" id="54">
-					<DataPath>Отсутствующие.Доплата</DataPath>
-					<Format>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ЧДЦ=2</v8:content>
-						</v8:item>
-					</Format>
-					<ContextMenu name="ДоплатаКонтекстноеМеню" id="55"/>
-					<ExtendedTooltip name="ДоплатаРасширеннаяПодсказка" id="56"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -180,21 +180,16 @@
 						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
 					</Type>
 				</Column>
+				<Column name="Должность" id="62">
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должности</v8:Type>
+					</Type>
+				</Column>
 				<Column name="Ставка" id="60">
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
 							<v8:Digits>5</v8:Digits>
-							<v8:FractionDigits>2</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-				</Column>
-				<Column name="Доплата" id="61">
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>15</v8:Digits>
 							<v8:FractionDigits>2</v8:FractionDigits>
 							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
