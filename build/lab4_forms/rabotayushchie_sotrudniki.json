@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Работающие сотрудники",
   "properties": { "autoTitle": false },
   "events": { "OnCreateAtServer": "ПриСозданииНаСервере" },
@@ -30,7 +30,7 @@
     { "name": "ДатаНачала", "type": "date" },
     { "name": "ДатаОкончания", "type": "date" },
     { "name": "ВидыРаботы", "type": "ValueList(EnumRef.ВидРаботы)" },
-    { "name": "ВидыФинансирования", "type": "ValueList(CatalogRef.ВидыФинансирования)" },
+    { "name": "ВидыФинансирования", "type": "ValueList(EnumRef.ИсточникФинансирования)" },
     { "name": "Подразделения", "type": "ValueList(CatalogRef.Подразделения)" },
     { "name": "Должности", "type": "ValueList(CatalogRef.Должности)" },
     { "name": "Пол", "type": "EnumRef.Пол" },

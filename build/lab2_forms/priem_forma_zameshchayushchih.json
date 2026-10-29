@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Подбор замещающих",
   "properties": {
     "windowOpeningMode": "LockOwnerWindow"
@@ -81,7 +81,7 @@
         },
         {
           "name": "ВидФинансирования",
-          "type": "CatalogRef.ВидыФинансирования"
+          "type": "EnumRef.ИсточникФинансирования"
         },
         {
           "name": "Подразделение",
