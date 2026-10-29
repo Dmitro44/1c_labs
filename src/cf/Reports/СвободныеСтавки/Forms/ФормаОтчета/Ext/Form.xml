@@ -95,7 +95,6 @@
 			<DataPath>Результат</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>None</TitleLocation>
-			<Output>Disable</Output>
 			<Protection>true</Protection>
 			<ContextMenu name="РезультатКонтекстноеМеню" id="22"/>
 			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="23"/>
@@ -127,7 +126,7 @@
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 			<Settings xsi:type="v8:TypeDescription">
-				<v8:Type>cfg:CatalogRef.ВидыФинансирования</v8:Type>
+				<v8:Type>cfg:EnumRef.ИсточникФинансирования</v8:Type>
 			</Settings>
 		</Attribute>
 		<Attribute name="Подразделения" id="26">

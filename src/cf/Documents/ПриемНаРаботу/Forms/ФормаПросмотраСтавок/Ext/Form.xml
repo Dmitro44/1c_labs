@@ -125,7 +125,7 @@
 				</Column>
 				<Column name="ВидФинансирования" id="35">
 					<Type>
-						<v8:Type>cfg:CatalogRef.ВидыФинансирования</v8:Type>
+						<v8:Type>cfg:EnumRef.ИсточникФинансирования</v8:Type>
 					</Type>
 				</Column>
 				<Column name="Разряд" id="36">

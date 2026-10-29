@@ -287,7 +287,6 @@
 			<Catalog>ТипУлицы</Catalog>
 			<Catalog>БанкиРБ</Catalog>
 			<Catalog>ПричинаОтсутствия</Catalog>
-			<Catalog>ВидыФинансирования</Catalog>
 			<Document>ПриказКадровый</Document>
 			<Document>ВводШтатнойЕдиницы</Document>
 			<Document>УдалениеШтатнойЕдиницы</Document>
@@ -320,6 +319,7 @@
 			<InformationRegister>ОбразованиеСотрудника</InformationRegister>
 			<InformationRegister>Отпуск</InformationRegister>
 			<InformationRegister>РаботыСотрудника</InformationRegister>
+			<InformationRegister>БольничныеПериоды</InformationRegister>
 			<AccumulationRegister>РегистрНакопленияНадбавок</AccumulationRegister>
 			<AccumulationRegister>РегистрУчетаСотрудников</AccumulationRegister>
 			<AccumulationRegister>РегистрУчетаСовмещений</AccumulationRegister>
