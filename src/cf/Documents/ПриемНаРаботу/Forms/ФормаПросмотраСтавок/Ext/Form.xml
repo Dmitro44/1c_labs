@@ -21,6 +21,13 @@
 			<ContextMenu name="СтавкиКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СтавкиКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="Выбрать" id="39">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Выбрать</CommandName>
+						<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="40"/>
+					</Button>
+				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="СтавкиРасширеннаяПодсказка" id="4"/>
 			<SearchStringAddition name="СтавкиСтрокаПоиска" id="5">
@@ -161,6 +168,17 @@
 			</Columns>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Выбрать</Action>
+		</Command>
+	</Commands>
 	<Parameters>
 		<Parameter name="Подразделение">
 			<Type>
