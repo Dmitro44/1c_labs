@@ -95,7 +95,6 @@
 			<DataPath>Результат</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<TitleLocation>None</TitleLocation>
-			<Output>Disable</Output>
 			<Protection>true</Protection>
 			<ContextMenu name="РезультатКонтекстноеМеню" id="22"/>
 			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="23"/>
