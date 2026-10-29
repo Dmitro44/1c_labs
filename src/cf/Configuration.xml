@@ -320,6 +320,7 @@
 			<InformationRegister>ОбразованиеСотрудника</InformationRegister>
 			<InformationRegister>Отпуск</InformationRegister>
 			<InformationRegister>РаботыСотрудника</InformationRegister>
+			<InformationRegister>БольничныеПериоды</InformationRegister>
 			<AccumulationRegister>РегистрНакопленияНадбавок</AccumulationRegister>
 			<AccumulationRegister>РегистрУчетаСотрудников</AccumulationRegister>
 			<AccumulationRegister>РегистрУчетаСовмещений</AccumulationRegister>

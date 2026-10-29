@@ -21,6 +21,7 @@
 			</Explanation>
 			<Picture/>
 			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.БольничныеПериоды</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РегистрУчетаСотрудников</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РегистрУчетаСовмещений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РегистрРаботыСоШтатнымРасписанием</xr:Item>
