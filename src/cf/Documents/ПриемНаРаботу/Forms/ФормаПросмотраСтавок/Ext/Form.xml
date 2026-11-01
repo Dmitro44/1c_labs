@@ -21,6 +21,19 @@
 			<ContextMenu name="СтавкиКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СтавкиКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДобавитьСтавки" id="39">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьСтавки</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Добавить ставки…</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ДобавитьСтавкиРасширеннаяПодсказка" id="40"/>
+					</Button>
+				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="СтавкиРасширеннаяПодсказка" id="4"/>
 			<SearchStringAddition name="СтавкиСтрокаПоиска" id="5">
@@ -181,4 +194,16 @@
 			</Type>
 		</Parameter>
 	</Parameters>
+
+	<Commands>
+		<Command name="ДобавитьСтавки" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить ставки…</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ДобавитьСтавки</Action>
+		</Command>
+	</Commands>
 </Form>
