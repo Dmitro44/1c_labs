@@ -22,7 +22,12 @@
 			<AutoCommandBar name="СтавкиКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
 				<ChildItems>
-					<Button name="ДобавитьСтавки" id="39">
+					<Button name="Выбрать" id="39">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Выбрать</CommandName>
+						<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="ДобавитьСтавки" id="42">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ДобавитьСтавки</CommandName>
 						<Title>
@@ -31,7 +36,7 @@
 								<v8:content>Добавить ставки…</v8:content>
 							</v8:item>
 						</Title>
-						<ExtendedTooltip name="ДобавитьСтавкиРасширеннаяПодсказка" id="40"/>
+						<ExtendedTooltip name="ДобавитьСтавкиРасширеннаяПодсказка" id="43"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
@@ -174,6 +179,26 @@
 			</Columns>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Выбрать</Action>
+		</Command>
+		<Command name="ДобавитьСтавки" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить ставки…</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ДобавитьСтавки</Action>
+		</Command>
+	</Commands>
 	<Parameters>
 		<Parameter name="Подразделение">
 			<Type>
@@ -194,16 +219,4 @@
 			</Type>
 		</Parameter>
 	</Parameters>
-
-	<Commands>
-		<Command name="ДобавитьСтавки" id="41">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить ставки…</v8:content>
-				</v8:item>
-			</Title>
-			<Action>ДобавитьСтавки</Action>
-		</Command>
-	</Commands>
 </Form>
