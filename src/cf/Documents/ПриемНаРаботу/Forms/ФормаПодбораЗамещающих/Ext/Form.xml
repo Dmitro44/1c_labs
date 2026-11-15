@@ -26,6 +26,17 @@
 						<CommandName>Form.Command.Выбрать</CommandName>
 						<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="5"/>
 					</Button>
+					<Button name="Добавить" id="66">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Добавить</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Добавить</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="67"/>
+					</Button>
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="ОтсутствующиеРасширеннаяПодсказка" id="6"/>
@@ -207,6 +218,15 @@
 				</v8:item>
 			</Title>
 			<Action>Выбрать</Action>
+		</Command>
+		<Command name="Добавить" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Добавить</Action>
 		</Command>
 	</Commands>
 </Form>

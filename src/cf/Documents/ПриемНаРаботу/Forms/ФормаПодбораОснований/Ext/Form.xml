@@ -26,6 +26,17 @@
 						<CommandName>Form.Command.Выбрать</CommandName>
 						<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="5"/>
 					</Button>
+					<Button name="ДобавитьОснование" id="26">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьОснование</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Добавить основание</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ДобавитьОснованиеРасширеннаяПодсказка" id="27"/>
+					</Button>
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="ОснованияРасширеннаяПодсказка" id="6"/>
@@ -115,6 +126,15 @@
 				</v8:item>
 			</Title>
 			<Action>Выбрать</Action>
+		</Command>
+		<Command name="ДобавитьОснование" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить основание</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ДобавитьОснование</Action>
 		</Command>
 	</Commands>
 </Form>
