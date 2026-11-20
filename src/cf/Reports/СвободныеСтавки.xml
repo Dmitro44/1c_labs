@@ -30,6 +30,7 @@
 		</Properties>
 		<ChildObjects>
 			<Form>ФормаОтчета</Form>
+			<Template>МакетОтчета</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>
