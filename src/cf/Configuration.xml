@@ -271,6 +271,8 @@
 			<CommonModule>ДемоДанныеСервер</CommonModule>
 			<HTTPService>ЗагрузкаДанных</HTTPService>
 			<Constant>БазоваяСтавка</Constant>
+			<Constant>БазоваяВеличина</Constant>
+			<Constant>СтавкаПервогоРазряда</Constant>
 			<Catalog>Надбавки</Catalog>
 			<Catalog>Подразделения</Catalog>
 			<Catalog>Должности</Catalog>

@@ -554,6 +554,9 @@
 									</Title>
 									<ContextMenu name="ЕдИзмКонтекстноеМеню" id="134"/>
 									<ExtendedTooltip name="ЕдИзмРасширеннаяПодсказка" id="135"/>
+									<Events>
+										<Event name="OnChange">ЕдИзмПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="Начало" id="136">
 									<DataPath>Объект.Надбавки.Начало</DataPath>
