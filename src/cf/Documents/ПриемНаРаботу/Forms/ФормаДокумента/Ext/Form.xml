@@ -582,6 +582,9 @@
 									<ExtendedTooltip name="КонецРасширеннаяПодсказка" id="141"/>
 								</InputField>
 							</ChildItems>
+							<Events>
+								<Event name="AfterDeleteRow">НадбавкиПослеУдаления</Event>
+							</Events>
 						</Table>
 					</ChildItems>
 				</Page>
