@@ -42,7 +42,6 @@
 		</Properties>
 		<ChildObjects>
 			<Subsystem>ПодачаСведений</Subsystem>
-			<Subsystem>Отчеты</Subsystem>
 			<Subsystem>КадровыеДвижения</Subsystem>
 		</ChildObjects>
 	</Subsystem>
